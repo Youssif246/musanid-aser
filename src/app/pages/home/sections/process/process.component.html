@@ -1,37 +1,30 @@
 <section class="editorial-process-section">
   
-  <!-- Subtle Large Editorial Watermark (Opacity 0.02 - Pure Atmosphere) -->
-  <div class="process-watermark-bg" aria-hidden="true">
-    <span>01 → 06</span>
-  </div>
+  <!-- Subtle Ambient Glow Orbs -->
+  <div class="process-ambient-glow" aria-hidden="true"></div>
 
   <div class="process-master-container">
 
     <!-- Section Header (Editorial & Measured Authority) -->
     <header class="process-section-header">
       
-      <!-- Small Gold Label with Editorial Line -->
+      <!-- Small Gold Label with Symmetrical Lines -->
       <div class="process-label-row">
+        <span class="process-gold-leadline" aria-hidden="true"></span>
         <span class="process-label-text">
-          {{ langService.currentLang === 'ar' ? 'مسار الطلب والتنفيذ' : 'OPERATIONAL MILESTONES' }}
+          {{ langService.t.process.label }}
         </span>
         <span class="process-gold-leadline" aria-hidden="true"></span>
       </div>
 
-      <!-- Main Editorial Headline in IBM Plex Sans Arabic -->
+      <!-- Main Editorial Headline -->
       <h2 class="process-main-heading">
-        @if (langService.currentLang === 'ar') {
-          منهجية تنفيذية من استلام الطلب <span class="gold-accent-text">حتى التسليم</span>
-        } @else {
-          Disciplined Operational Framework <span class="gold-accent-text">through Handover</span>
-        }
+        {{ langService.t.process.title }}
       </h2>
 
       <!-- Supporting Paragraph -->
       <p class="process-lead-text">
-        {{ langService.currentLang === 'ar'
-          ? 'ست محطات عمل دقيقة تضمن الشفافية المالية الكاملة، مطابقة المواصفات الهندسية، والالتزام الصارم بالجداول الزمنية.'
-          : 'Six precision milestones ensuring total fiscal transparency, rigorous technical adherence, and timeline dependability.' }}
+        {{ langService.t.process.description }}
       </p>
 
     </header>
@@ -39,51 +32,46 @@
     <!-- The Vertical Process Journey Architecture -->
     <div class="process-journey-timeline">
 
-      @for (item of processSteps; track item.step; let idx = $index) {
+      @for (item of langService.t.process.steps; track item.step; let idx = $index) {
         <article class="journey-stage-row" [class.stage-even]="idx % 2 === 1">
           
-          <!-- Central Spine Node & Horizontal Architectural Branch -->
+          <!-- Central Spine Node (Cleanly Centered on Card) -->
           <div class="journey-spine-node" aria-hidden="true">
             <div class="journey-node-marker">
               <span class="journey-marker-dot"></span>
             </div>
-            <!-- Horizontal Branch Line connecting Spine to Content -->
-            <span class="journey-branch-line"></span>
           </div>
 
-          <!-- Editorial Stage Territory (No Box / No Cards) -->
-          <div class="journey-stage-block">
-            
-            <!-- Stage Micro-Label & Secondary Icon Signature -->
-            <div class="journey-stage-meta">
-              <div class="journey-meta-badge">
-                <span class="journey-stage-tag">
-                  {{ langService.currentLang === 'ar' ? item.stageAr : item.stageEn }}
-                </span>
+          <!-- Frosted Architectural Stage Card -->
+          <div class="journey-stage-card">
+
+            <!-- Card Header: Stage Pill Badge & Prominent Number + Icon -->
+            <div class="stage-card-header">
+              <div class="stage-badge-pill">
+                <span class="badge-dot"></span>
+                <span>{{ item.stage }}</span>
               </div>
-              <span class="journey-stage-icon" aria-hidden="true">
-                <i [class]="item.icon"></i>
-              </span>
+              <div class="stage-header-meta">
+                <span class="stage-prominent-num">{{ item.step }}</span>
+                <div class="stage-icon-box" aria-hidden="true">
+                  <i [class]="stepIcons[idx]"></i>
+                </div>
+              </div>
             </div>
 
-            <!-- Chapter Marker Number (Large Gold Anchor 36-44px) -->
-            <div class="journey-num-wrap">
-              <span class="journey-stage-num">{{ item.step }}</span>
-            </div>
-
-            <!-- Stage Headline (Strong 1.55rem Typography) -->
-            <h3 class="journey-stage-title">
-              {{ langService.currentLang === 'ar' ? item.titleAr : item.titleEn }}
+            <!-- Stage Headline -->
+            <h3 class="stage-card-title">
+              {{ item.title }}
             </h3>
 
-            <!-- Subtle Gold Accent Rule Under Title (Expands smoothly on hover) -->
-            <div class="journey-title-accent" aria-hidden="true">
-              <span class="title-accent-gold"></span>
+            <!-- Gold Accent Hairline Rule -->
+            <div class="stage-card-accent" aria-hidden="true">
+              <span class="card-accent-gold"></span>
             </div>
 
             <!-- Supporting Description -->
-            <p class="journey-stage-desc">
-              {{ langService.currentLang === 'ar' ? item.descAr : item.descEn }}
+            <p class="stage-card-desc">
+              {{ item.desc }}
             </p>
 
           </div>
@@ -91,16 +79,15 @@
         </article>
       }
 
-      <!-- Premium Terminal Ending Conclusion -->
+      <!-- Terminal Ending Conclusion -->
       <div class="journey-terminal-conclusion">
         <div class="terminal-spine-anchor" aria-hidden="true">
+          <span class="terminal-pulse-ring"></span>
           <span class="terminal-node-dot"></span>
           <span class="terminal-crossbar"></span>
         </div>
         <p class="terminal-statement">
-          {{ langService.currentLang === 'ar'
-            ? 'من الطلب إلى التسليم، بتنسيق ومتابعة دقيقة.'
-            : 'From inquiry to final handover with rigorous operational governance.' }}
+          {{ langService.t.process.terminalConclusion }}
         </p>
       </div>
 

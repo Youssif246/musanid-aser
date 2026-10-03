@@ -9,36 +9,30 @@
       <!-- Asymmetric Right-Aligned Content Column (Controlled Max-Width) -->
       <div class="cta-content-column">
         
-        <!-- Subtle Editorial Brand Label with Gold Line -->
+        <!-- Centered Editorial Brand Label with Flanking Gold Lines -->
         <div class="cta-editorial-label">
+          <span class="cta-gold-line" aria-hidden="true"></span>
           <span class="cta-label-text">
-            {{ langService.currentLang === 'ar' ? 'ابدأ التعاقد والتوريد' : 'INITIATE COMMERCIAL PARTNERSHIP' }}
+            {{ langService.t.cta.label }}
           </span>
           <span class="cta-gold-line" aria-hidden="true"></span>
         </div>
 
         <!-- Main Heading (White + Gold Hierarchy) -->
         <h2 class="cta-cinematic-heading">
-          @if (langService.currentLang === 'ar') {
-            <span class="heading-white-line">جاهزون لتمكين أعمالكم</span>
-            <span class="heading-gold-line">بأفضل حلول التوريد والوساطة التجارية</span>
-          } @else {
-            <span class="heading-white-line">Ready to Empower Your Enterprise</span>
-            <span class="heading-gold-line">with Precision Supply & Commercial Brokerage</span>
-          }
+          <span class="heading-white-line">{{ langService.t.cta.titleLine1 }}</span>
+          <span class="heading-gold-line">{{ langService.t.cta.titleLine2 }}</span>
         </h2>
 
         <!-- Supporting Paragraph (Subtle & Restrained) -->
         <p class="cta-cinematic-lead">
-          {{ langService.currentLang === 'ar'
-            ? 'شاركنا تفاصيل ومواصفات احتياجاتكم، لنعمل على البحث عن الموردين المناسبين، وجمع عروض الأسعار التنافسية، ومتابعة كافة مراحل التوريد باحترافية.'
-            : 'Submit your procurement specifications to evaluate suitable suppliers, gather competitive quotations, and coordinate fulfillment professionally.' }}
+          {{ langService.t.cta.description }}
         </p>
 
         <!-- Single Refined Action Button -->
         <div class="cta-action-wrap">
           <a routerLink="/request-quote" class="cta-btn-gold">
-            <span>{{ langService.currentLang === 'ar' ? 'تقديم طلب تسعيرة جديد' : 'Submit a Quote Request' }}</span>
+            <span>{{ langService.t.cta.buttonText }}</span>
             <i class="fa-solid cta-btn-arrow" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'" aria-hidden="true"></i>
           </a>
         </div>

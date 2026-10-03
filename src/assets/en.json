@@ -21,9 +21,9 @@
     "switchLang": "العربية"
   },
   "hero": {
-    "eyebrow": "MASANED ASER",
-    "titleLine1": "Business Supply Solutions",
-    "titleLine2": "& Commercial Brokerage",
+    "eyebrow": "MASANED ASER · SUPPLY & COMMERCIAL BROKERAGE",
+    "titleLine1": "Integrated Solutions in Business Supply",
+    "titleLine2": "& Professional Commercial Brokerage",
     "description": "We assist businesses and projects in fulfilling their procurement needs by sourcing suitable suppliers, collecting and comparing quotations, and coordinating execution with precision and reliability.",
     "ctaQuote": "Request a Quote",
     "ctaServices": "Explore Services"
@@ -204,7 +204,7 @@
   "cta": {
     "label": "INITIATE PROCUREMENT",
     "titleLine1": "Ready to Empower Your Enterprise",
-    "titleLine2": "With Supply & Brokerage Solutions",
+    "titleLine2": "with Structured Supply & Brokerage Solutions",
     "description": "Submit your procurement specifications to evaluate suitable suppliers, gather competitive quotations, and coordinate fulfillment professionally.",
     "buttonText": "Submit a Quote Request"
   },

@@ -1,39 +1,36 @@
 <header class="editorial-header">
   <div class="editorial-container nav-wrapper">
-    
+
     <!-- Brand Logo -->
     <a routerLink="/" class="brand-link" (click)="closeMenu()">
       <img src="/logo.png" alt="مساند أسر | Masaned Aser" class="brand-logo-img" />
       <span class="brand-name">
-        {{ langService.currentLang === 'ar' ? 'مساند أسر' : 'Masaned Aser' }}
+        {{ langService.t.meta.companyName }}
       </span>
     </a>
 
     <!-- Desktop Navigation Links (Exactly 4 official pages) -->
     <nav class="desktop-navigation" aria-label="Main Navigation">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-anchor">
-        {{ langService.currentLang === 'ar' ? 'الرئيسية' : 'Home' }}
+        {{ langService.t.nav.home }}
       </a>
       <a routerLink="/about" routerLinkActive="active" class="nav-anchor">
-        {{ langService.currentLang === 'ar' ? 'من نحن' : 'About Us' }}
+        {{ langService.t.nav.about }}
       </a>
       <a routerLink="/services" routerLinkActive="active" class="nav-anchor">
-        {{ langService.currentLang === 'ar' ? 'خدماتنا' : 'Services' }}
+        {{ langService.t.nav.services }}
       </a>
       <a routerLink="/sectors" routerLinkActive="active" class="nav-anchor">
-        {{ langService.currentLang === 'ar' ? 'القطاعات' : 'Sectors' }}
+        {{ langService.t.nav.sectors }}
       </a>
     </nav>
 
     <!-- Utilities: Minimalist Language Switcher + The Single Primary CTA -->
     <div class="nav-utilities">
-      
+
       <!-- Editorial Minimalist Language Switcher (Text Control, NOT a CTA) -->
-      <button 
-        type="button" 
-        (click)="langService.toggleLanguage()" 
-        class="lang-text-toggle"
-        [attr.aria-label]="langService.currentLang === 'ar' ? 'Switch to English' : 'التحويل للعربية'">
+      <button type="button" (click)="langService.toggleLanguage()" class="lang-text-toggle"
+        [attr.aria-label]="langService.t.nav.switchLang">
         <span class="lang-opt" [class.lang-current]="langService.currentLang === 'ar'">AR</span>
         <span class="lang-divider">|</span>
         <span class="lang-opt" [class.lang-current]="langService.currentLang === 'en'">EN</span>
@@ -41,16 +38,13 @@
 
       <!-- The Single CTA: Request a Quote (Gold #D4AF37 on #1F1F1F) -->
       <a routerLink="/request-quote" class="editorial-quote-cta">
-        <span>{{ langService.currentLang === 'ar' ? 'طلب تسعيرة' : 'Request a Quote' }}</span>
-        <i class="fa-solid cta-arrow" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
+        <span>{{ langService.t.nav.quote }}</span>
+        <i class="fa-solid cta-arrow" [class.fa-arrow-left]="langService.currentLang === 'ar'"
+          [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
       </a>
 
       <!-- Minimalist Mobile Menu Trigger -->
-      <button 
-        type="button" 
-        class="mobile-menu-trigger" 
-        (click)="toggleMenu()"
-        [class.is-open]="isMenuOpen"
+      <button type="button" class="mobile-menu-trigger" (click)="toggleMenu()" [class.is-open]="isMenuOpen"
         [attr.aria-label]="isMenuOpen ? 'Close navigation' : 'Open navigation'">
         <span class="trigger-bar"></span>
         <span class="trigger-bar"></span>
@@ -62,34 +56,36 @@
 
   <!-- Mobile Light Editorial Drawer Panel -->
   @if (isMenuOpen) {
-    <div class="mobile-light-drawer">
-      <nav class="mobile-nav-list">
-        <a routerLink="/" (click)="closeMenu()" routerLinkActive="mobile-active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ langService.currentLang === 'ar' ? 'الرئيسية' : 'Home' }}
-        </a>
-        <a routerLink="/about" (click)="closeMenu()" routerLinkActive="mobile-active">
-          {{ langService.currentLang === 'ar' ? 'من نحن' : 'About Us' }}
-        </a>
-        <a routerLink="/services" (click)="closeMenu()" routerLinkActive="mobile-active">
-          {{ langService.currentLang === 'ar' ? 'خدماتنا' : 'Services' }}
-        </a>
-        <a routerLink="/sectors" (click)="closeMenu()" routerLinkActive="mobile-active">
-          {{ langService.currentLang === 'ar' ? 'القطاعات' : 'Sectors' }}
-        </a>
-      </nav>
+  <div class="mobile-light-drawer">
+    <nav class="mobile-nav-list">
+      <a routerLink="/" (click)="closeMenu()" routerLinkActive="mobile-active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        {{ langService.t.nav.home }}
+      </a>
+      <a routerLink="/about" (click)="closeMenu()" routerLinkActive="mobile-active">
+        {{ langService.t.nav.about }}
+      </a>
+      <a routerLink="/services" (click)="closeMenu()" routerLinkActive="mobile-active">
+        {{ langService.t.nav.services }}
+      </a>
+      <a routerLink="/sectors" (click)="closeMenu()" routerLinkActive="mobile-active">
+        {{ langService.t.nav.sectors }}
+      </a>
+    </nav>
 
-      <div class="mobile-drawer-bottom">
-        <button type="button" (click)="langService.toggleLanguage(); closeMenu()" class="mobile-lang-toggle">
-          <span [class.active-code]="langService.currentLang === 'ar'">العربية</span>
-          <span class="lang-slash">/</span>
-          <span [class.active-code]="langService.currentLang === 'en'">English</span>
-        </button>
+    <div class="mobile-drawer-bottom">
+      <button type="button" (click)="langService.toggleLanguage(); closeMenu()" class="mobile-lang-toggle">
+        <span [class.active-code]="langService.currentLang === 'ar'">العربية</span>
+        <span class="lang-slash">/</span>
+        <span [class.active-code]="langService.currentLang === 'en'">English</span>
+      </button>
 
-        <a routerLink="/request-quote" (click)="closeMenu()" class="mobile-quote-cta">
-          <span>{{ langService.currentLang === 'ar' ? 'طلب تسعيرة' : 'Request a Quote' }}</span>
-          <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
-        </a>
-      </div>
+      <a routerLink="/request-quote" (click)="closeMenu()" class="mobile-quote-cta">
+        <span>{{ langService.t.nav.quote }}</span>
+        <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'"
+          [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
+      </a>
     </div>
+  </div>
   }
 </header>

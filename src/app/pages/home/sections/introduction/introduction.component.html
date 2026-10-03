@@ -17,18 +17,14 @@
       <div class="manifesto-label-row">
         <span class="manifesto-gold-marker"></span>
         <span class="manifesto-label-text">
-          {{ langService.currentLang === 'ar' ? 'البيان المؤسسي' : 'CORPORATE MANIFESTO' }}
+          {{ langService.t.introduction.label }}
         </span>
       </div>
 
       <!-- Statement in Site Font (Almarai) -->
       <div class="manifesto-statement-wrapper">
         <h2 class="manifesto-statement-text">
-          @if (langService.currentLang === 'ar') {
-            نقدم حلولاً متكاملة في <span class="gold-accent-text">توريد الأعمال والوساطة التجارية</span>، لمساندة الشركات والمشروعات في تلبية احتياجاتها بكفاءة وموثوقية.
-          } @else {
-            Delivering structured solutions in <span class="gold-accent-text">business supply & commercial brokerage</span>, helping enterprises fulfill their procurement demands with precision and clarity.
-          }
+          {{ langService.t.introduction.statement }}
         </h2>
       </div>
 
@@ -46,12 +42,10 @@
           <i class="fa-solid fa-compass"></i>
         </div>
         <h3 class="principle-heading">
-          {{ langService.currentLang === 'ar' ? 'التموضع المؤسسي' : 'Institutional Focus' }}
+          {{ langService.t.introduction.principles[0].title }}
         </h3>
         <p class="principle-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'انطلقت مساند أسر في الرياض لتقديم خدمات متخصصة في توريد الأعمال والوساطة التجارية، ومساعدة المنشآت على تنظيم متطلبات التوريد وتوفير احتياجاتها بأسلوب عملي منظم.'
-            : 'Established in Riyadh to provide specialized business supply and commercial brokerage services, assisting organizations in organizing procurement requirements efficiently.' }}
+          {{ langService.t.introduction.principles[0].desc }}
         </p>
       </article>
 
@@ -61,12 +55,10 @@
           <i class="fa-solid fa-handshake"></i>
         </div>
         <h3 class="principle-heading">
-          {{ langService.currentLang === 'ar' ? 'الوساطة المهنية' : 'Professional Brokerage' }}
+          {{ langService.t.introduction.principles[1].title }}
         </h3>
         <p class="principle-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'نبحث عن الموردين المناسبين لطبيعة كل طلب وندير التواصل التجاري وجمع العروض، بما يضمن للعميل وضوح الشروط والحصول على تسعيرة مناسبة ومطابقة للمواصفات.'
-            : 'We identify appropriate suppliers matching each requirement and facilitate commercial engagement to ensure transparent terms and competitive pricing.' }}
+          {{ langService.t.introduction.principles[1].desc }}
         </p>
       </article>
 
@@ -76,12 +68,10 @@
           <i class="fa-solid fa-shield-halved"></i>
         </div>
         <h3 class="principle-heading">
-          {{ langService.currentLang === 'ar' ? 'وضوح الأسعار والمتابعة' : 'Pricing Clarity & Follow-up' }}
+          {{ langService.t.introduction.principles[2].title }}
         </h3>
         <p class="principle-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'نقدم مقارنة موضوعية لعروض الأسعار تكشف الفروقات الفنية والمالية، مع التنسيق والمتابعة المستمرة لمراحل التوريد لضمان استلام الطلب بالصورة المعتمدة.'
-            : 'Providing objective quotation comparisons that detail technical and financial specifics, alongside ongoing coordination throughout execution.' }}
+          {{ langService.t.introduction.principles[2].desc }}
         </p>
       </article>
 
@@ -92,10 +82,11 @@
       <a routerLink="/about" class="manifesto-editorial-link">
         <div class="link-content-row">
           <span class="link-label">
-            {{ langService.currentLang === 'ar' ? 'استكشف قصة ورؤية مساند أسر بالتفصيل' : 'Explore the Complete Musaned Aser Narrative' }}
+            {{ langService.t.introduction.linkText }}
           </span>
           <span class="link-arrow-box" aria-hidden="true">
-            <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
+            <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'"
+              [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
           </span>
         </div>
         <div class="link-gold-rule" aria-hidden="true"></div>

@@ -1,54 +1,40 @@
 /* ========================================================
    MUSANED ASER — CINEMATIC EDITORIAL CLOSING CTA
    Standard CSS Only (Zero SCSS)
-   Compact Height (~480-520px) + Full-Bleed Photograph (/cta.png)
-   Luminous Sunlight on Executive / High Contrast on Text
-   Unified Typography: IBM Plex Sans Arabic
+   Centered Cinematic Composition matching Hero Section
+   Deep Rich Black Atmosphere + Amiri / IBM Plex Typography
    ======================================================== */
 
 .editorial-cinematic-cta {
   position: relative;
   width: 100%;
-  min-height: 480px;
-  background-color: #063A3A;
+  min-height: 520px;
+  background-color: #0B0E11;
   background-image: url('/cta.png');
   background-size: cover;
-  background-position: center left;
+  background-position: center 30%;
   background-repeat: no-repeat;
   color: #FFFFFF;
-  padding: 75px 0 70px;
+  padding: 85px 0 80px;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-top: 1px solid rgba(212, 175, 55, 0.25);
-  border-bottom: none;
 }
 
-/* Sophisticated Directional Overlay:
-   Right side (text area): rich Deep Teal (~0.86 - 0.68) for crisp legibility.
-   Left side (photography area): drops down to 0.08 so the Saudi executive, Riyadh towers, and sunlight stay vibrant. */
+/* Pure Deep Black Cinematic Overlay matching Hero section */
 .cta-cinematic-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to left,
-    rgba(5, 42, 42, 0.86) 0%,
-    rgba(5, 42, 42, 0.68) 42%,
-    rgba(5, 42, 42, 0.24) 74%,
-    rgba(5, 42, 42, 0.08) 100%
+    180deg,
+    rgba(0, 0, 0, 0.52) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 0.82) 100%
   );
   z-index: 1;
   pointer-events: none;
-}
-
-[dir="ltr"] .cta-cinematic-overlay {
-  background: linear-gradient(
-    to right,
-    rgba(5, 42, 42, 0.86) 0%,
-    rgba(5, 42, 42, 0.68) 42%,
-    rgba(5, 42, 42, 0.24) 74%,
-    rgba(5, 42, 42, 0.08) 100%
-  );
 }
 
 /* Master Container */
@@ -61,97 +47,92 @@
   z-index: 2;
 }
 
-/* Editorial Layout: Asymmetric Right-Aligned Content (In RTL) */
+/* Centered Editorial Layout */
 .cta-editorial-layout {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .cta-content-column {
   width: 100%;
-  max-width: 580px;
-  text-align: right;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-[dir="ltr"] .cta-content-column {
-  text-align: left;
-}
-
-/* Top Editorial Brand Label */
+/* Top Centered Editorial Brand Label */
 .cta-editorial-label {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .cta-label-text {
   font-family: var(--font-ar);
   font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.10em;
-  color: #D4AF37;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
   text-transform: uppercase;
 }
 
-[dir="ltr"] .cta-label-text {
-  letter-spacing: 0.14em;
-}
-
 .cta-gold-line {
-  width: 36px;
+  width: 28px;
   height: 1.5px;
-  background-color: #D4AF37;
+  background-color: var(--gold-primary);
   display: inline-block;
 }
 
-/* Main Heading (Controlled 48-52px Scale with White + Gold Separation) */
+/* Monumental Centered Headline */
 .cta-cinematic-heading {
   font-family: var(--font-ar);
-  font-size: 2.35rem; /* ~48px - 52px */
-  font-weight: 700;
-  line-height: 1.35;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.45;
   letter-spacing: -0.015em;
-  margin: 0 0 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  text-align: center;
+  margin: 0 auto 18px;
+  max-width: 840px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.65);
 }
 
 .heading-white-line {
   color: #FFFFFF;
+  display: block;
 }
 
 .heading-gold-line {
-  color: #D4AF37;
+  color: #FFF3C4;
+  font-weight: 700;
+  display: block;
 }
 
-[dir="ltr"] .cta-cinematic-heading {
-  font-size: 2.15rem;
-  line-height: 1.30;
-}
-
-/* Supporting Paragraph (Subtle & Restrained) */
+/* Supporting Centered Paragraph */
 .cta-cinematic-lead {
   font-family: var(--font-ar);
-  font-size: 0.96rem; /* ~15.5px */
+  font-size: 1.05rem;
   font-weight: 400;
-  line-height: 1.82;
-  color: rgba(255, 255, 255, 0.84);
-  max-width: 540px;
-  margin: 0 0 28px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 660px;
+  margin: 0 auto 32px;
+  text-align: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
-[dir="ltr"] .cta-cinematic-lead {
-  font-size: 0.92rem;
-  line-height: 1.74;
-}
-
-/* CTA Action Button */
+/* Centered CTA Action Button */
 .cta-action-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .cta-btn-gold {
@@ -159,30 +140,31 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-color: #D4AF37;
-  color: #0B4D4D;
+  background-color: var(--gold-primary);
+  color: #1F1F1F;
   font-family: var(--font-ar);
   font-size: 0.98rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   height: 52px;
-  padding: 0 30px;
+  padding: 0 34px;
   border-radius: 4px;
+  border: 1px solid #C49F27;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
-  transition: background-color 0.25s ease,
-              transform 0.25s ease,
-              box-shadow 0.25s ease;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.32);
+  transition: all 0.25s var(--ease-editorial);
+  white-space: nowrap;
 }
 
 .cta-btn-gold:hover {
-  background-color: #C09A2B;
-  color: #063A3A;
+  background-color: #C59E24;
+  color: #121212;
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.32);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.48);
 }
 
 .cta-btn-arrow {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   transition: transform 0.25s ease;
 }
 
@@ -197,38 +179,24 @@
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .editorial-cinematic-cta {
-    min-height: 460px;
-    padding: 65px 0 60px;
-    background-position: 30% center;
+    min-height: 480px;
+    padding: 70px 0 65px;
   }
 
   .cta-cinematic-heading {
-    font-size: 2.1rem;
-  }
-
-  [dir="ltr"] .cta-cinematic-heading {
-    font-size: 1.9rem;
+    font-size: 2.35rem;
+    line-height: 1.4;
   }
 
   .cta-content-column {
-    max-width: 520px;
+    max-width: 720px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .editorial-cinematic-cta {
     min-height: auto;
     padding: 60px 0 55px;
-    background-position: 75% center;
-  }
-
-  .cta-cinematic-overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(5, 42, 42, 0.82) 0%,
-      rgba(6, 48, 48, 0.88) 50%,
-      rgba(5, 42, 42, 0.94) 100%
-    );
   }
 
   .cta-master-container {
@@ -240,24 +208,20 @@
   }
 
   .cta-cinematic-heading {
-    font-size: 1.8rem;
-    line-height: 1.36;
-  }
-
-  [dir="ltr"] .cta-cinematic-heading {
-    font-size: 1.6rem;
+    font-size: 1.85rem;
+    line-height: 1.38;
+    margin-bottom: 14px;
   }
 
   .cta-cinematic-lead {
-    font-size: 0.92rem;
-    line-height: 1.72;
-    margin-bottom: 24px;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 26px;
   }
 
   .cta-btn-gold {
     width: 100%;
     max-width: 320px;
     height: 50px;
-    font-size: 0.95rem;
   }
 }

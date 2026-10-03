@@ -8,33 +8,25 @@
       <div class="standards-label-row">
         <span class="standards-gold-marker"></span>
         <span class="standards-label-text">
-          {{ langService.currentLang === 'ar' ? 'منظومة الجودة والموثوقية' : 'INSTITUTIONAL CRITERIA & STANDARDS' }}
+          {{ langService.t.standards.label }}
         </span>
       </div>
 
       <!-- Monumental Headline in IBM Plex Sans Arabic -->
       <h2 class="standards-heading">
-        @if (langService.currentLang === 'ar') {
-          معايير احترافية تعيد تعريف <span class="gold-accent-text">كفاءة التوريد</span> والوساطة التجارية
-        } @else {
-          Professional Rigor Redefining <span class="gold-accent-text">Procurement Efficiency</span> & Governance
-        }
+        {{ langService.t.standards.title }}
       </h2>
 
       <!-- Supporting Paragraph -->
       <p class="standards-lead-text">
-        @if (langService.currentLang === 'ar') {
-          نعتمد منهجية عمل واضحة لتدقيق كل مرحلة في مسار التوريد، ومساندة المنشآت في الحصول على أفضل قيمة فنية وتجارية لاحتياجاتها.
-        } @else {
-          We apply a structured methodology to oversee each stage of the supply process, supporting organizations in securing optimal technical and commercial value.
-        }
+        {{ langService.t.standards.description }}
       </p>
 
       <!-- Refined Trust Statement Signature (Not a Button) -->
       <div class="standards-trust-seal">
         <i class="fa-solid fa-shield-halved trust-seal-icon" aria-hidden="true"></i>
         <span class="trust-seal-text">
-          {{ langService.currentLang === 'ar' ? 'التزام مطلق بالشفافية والحياد التجاري' : 'Total Transparency & Commercial Impartiality' }}
+          {{ langService.t.standards.trustSeal }}
         </span>
       </div>
 
@@ -48,102 +40,70 @@
 
       <!-- Standard Card 01 -->
       <article class="standard-editorial-card">
-        
-        <!-- Header: Number & Icon -->
         <div class="standard-card-header">
-          <span class="standard-card-num">01</span>
+          <span class="standard-card-num">{{ langService.t.standards.items[0].num }}</span>
           <div class="standard-card-icon" aria-hidden="true">
             <i class="fa-solid fa-building-circle-check"></i>
           </div>
         </div>
-
-        <!-- Crisp Internal Hairline -->
         <div class="standard-card-divider" aria-hidden="true"></div>
-
-        <!-- Title: Strong Editorial Right-Aligned Typography -->
         <h3 class="standard-card-title">
-          {{ langService.currentLang === 'ar' ? 'انتقاء الموردين المؤهلين والمطابقين' : 'Pre-Qualified Supplier Network' }}
+          {{ langService.t.standards.items[0].title }}
         </h3>
-
-        <!-- Description: Generous Line-Height & Calm Tone -->
         <p class="standard-card-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'فحص شامل لجدارة ومصداقية الموردين والتأكد من قدرتهم الفنية واللوجستية قبل ترشيحهم لأي مشروع تجاري.'
-            : 'Rigorous vetting of supplier solvency and technical capabilities prior to presenting them for corporate procurement.' }}
+          {{ langService.t.standards.items[0].desc }}
         </p>
-
       </article>
 
       <!-- Standard Card 02 -->
       <article class="standard-editorial-card">
-        
         <div class="standard-card-header">
-          <span class="standard-card-num">02</span>
+          <span class="standard-card-num">{{ langService.t.standards.items[1].num }}</span>
           <div class="standard-card-icon" aria-hidden="true">
             <i class="fa-solid fa-scale-balanced"></i>
           </div>
         </div>
-
         <div class="standard-card-divider" aria-hidden="true"></div>
-
         <h3 class="standard-card-title">
-          {{ langService.currentLang === 'ar' ? 'وساطة متخصصة تحفظ حقوق الأطراف' : 'Specialized Commercial Mediation' }}
+          {{ langService.t.standards.items[1].title }}
         </h3>
-
         <p class="standard-card-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'إدارة محترفة للمفاوضات وصياغة الشروط بما يضمن حماية ميزانية المشتري وتحقيق شروط توريد عادلة ومستقرة.'
-            : 'Expert commercial negotiation ensuring optimized buyer economics and dependable contractual supply terms.' }}
+          {{ langService.t.standards.items[1].desc }}
         </p>
-
       </article>
 
       <!-- Standard Card 03 -->
       <article class="standard-editorial-card">
-        
         <div class="standard-card-header">
-          <span class="standard-card-num">03</span>
+          <span class="standard-card-num">{{ langService.t.standards.items[2].num }}</span>
           <div class="standard-card-icon" aria-hidden="true">
             <i class="fa-solid fa-chart-pie"></i>
           </div>
         </div>
-
         <div class="standard-card-divider" aria-hidden="true"></div>
-
         <h3 class="standard-card-title">
-          {{ langService.currentLang === 'ar' ? 'تدقيق تحليلي دقيق لعروض الأسعار' : 'Audited Quotation Analytics' }}
+          {{ langService.t.standards.items[2].title }}
         </h3>
-
         <p class="standard-card-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'إعداد جداول مقارنة منهجية تكشف فروقات الأسعار والمواصفات الخفية لتمكين إدارة المشتريات من اتخاذ قرارات حاسمة.'
-            : 'Delivering structured comparative matrices that uncover technical variances and drive decisive procurement actions.' }}
+          {{ langService.t.standards.items[2].desc }}
         </p>
-
       </article>
 
       <!-- Standard Card 04 -->
       <article class="standard-editorial-card">
-        
         <div class="standard-card-header">
-          <span class="standard-card-num">04</span>
+          <span class="standard-card-num">{{ langService.t.standards.items[3].num }}</span>
           <div class="standard-card-icon" aria-hidden="true">
             <i class="fa-solid fa-calendar-check"></i>
           </div>
         </div>
-
         <div class="standard-card-divider" aria-hidden="true"></div>
-
         <h3 class="standard-card-title">
-          {{ langService.currentLang === 'ar' ? 'متابعة مراحل التنفيذ والجداول الزمنية' : 'Milestone Delivery Governance' }}
+          {{ langService.t.standards.items[3].title }}
         </h3>
-
         <p class="standard-card-desc">
-          {{ langService.currentLang === 'ar'
-            ? 'تنسيق متواصل ومتابعة حثيثة لكافة مراحل التصنيع والتجهيز والشحن حتى وصول المواد ومطابقتها في الموقع.'
-            : 'Continuous oversight from order confirmation through preparation, logistics, and on-site material compliance.' }}
+          {{ langService.t.standards.items[3].desc }}
         </p>
-
       </article>
 
     </div>

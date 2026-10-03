@@ -13,22 +13,9 @@ import { services } from '../../../../shared/data/services';
 export class ServicesPreviewComponent {
   langService = inject(LanguageService);
 
-  // Three featured service pillars for homepage editorial preview
-  featuredServices = [
-    {
-      ...services[0], // 01 — توريد الأعمال
-      num: '01',
-      image: 'services/business-supply.jpg'
-    },
-    {
-      ...services[1], // 02 — الوساطة التجارية
-      num: '02',
-      image: 'services/commercial-brokerage.jpg'
-    },
-    {
-      ...services[5], // 03 — حلول التوريد المخصصة (id: 6 in data)
-      num: '03',
-      image: 'services/custom-supply-solutions.jpg'
-    }
+  featuredServiceMeta = [
+    { index: 0, image: 'services/business-supply.jpg' },
+    { index: 1, image: 'services/commercial-brokerage.jpg' },
+    { index: 5, image: 'services/custom-supply-solutions.jpg' }
   ];
 }

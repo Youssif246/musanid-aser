@@ -1,66 +1,58 @@
 <footer class="site-footer">
   <div class="editorial-container footer-container">
-    
+
     <div class="footer-grid">
-      
+
       <!-- Brand & Summary Col -->
       <div class="footer-col footer-brand-col">
         <a routerLink="/" class="footer-brand-link">
           <img src="/logo.png" alt="مساند أسر | Masaned Aser" class="footer-logo-img" />
           <div class="footer-brand-title">
-            <span class="brand-ar">مساند أسر</span>
-            <span class="brand-desc">للإمدادات والوساطة التجارية</span>
-            <span class="brand-en">MASANED ASER · SUPPLY & COMMERCIAL BROKERAGE</span>
+            <span class="brand-ar">{{ langService.t.meta.companyName }}</span>
+            <span class="brand-desc">{{ langService.t.footer.brandDesc }}</span>
           </div>
         </a>
 
         <p class="footer-mission">
-          {{ langService.currentLang === 'ar' 
-            ? 'شريك التوريد التجاري والوساطة المعتمدة للمنشآت والمشاريع في المملكة العربية السعودية. حلول متكاملة تضمن جودة التوريد وتنافسية التكاليف.'
-            : 'Premier corporate procurement and commercial brokerage partner for enterprises across Saudi Arabia, ensuring rigorous quality and cost optimization.' }}
+          {{ langService.t.footer.mission }}
         </p>
-
-        <div class="footer-saudi-badge">
-          <i class="fa-solid fa-shield-halved footer-shield-icon"></i>
-          <span>{{ langService.currentLang === 'ar' ? 'سجل تجاري سعودي معتمد · الرياض' : 'Certified Saudi Commercial Registry · Riyadh' }}</span>
-        </div>
       </div>
 
       <!-- Quick Navigation Col -->
       <div class="footer-col">
         <h4 class="footer-heading">
-          {{ langService.currentLang === 'ar' ? 'روابط الوصول' : 'Navigation' }}
+          {{ langService.t.footer.navHeading }}
         </h4>
         <div class="footer-gold-bar"></div>
         <ul class="footer-nav-list">
           <li>
             <a routerLink="/">
               <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'الرئيسية' : 'Home' }}</span>
+              <span>{{ langService.t.nav.home }}</span>
             </a>
           </li>
           <li>
             <a routerLink="/about">
               <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'من نحن' : 'About Us' }}</span>
+              <span>{{ langService.t.nav.about }}</span>
             </a>
           </li>
           <li>
             <a routerLink="/services">
               <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'مجالات التوريد' : 'Services' }}</span>
+              <span>{{ langService.t.nav.services }}</span>
             </a>
           </li>
           <li>
             <a routerLink="/sectors">
               <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'القطاعات المستهدفة' : 'Sectors' }}</span>
+              <span>{{ langService.t.nav.sectors }}</span>
             </a>
           </li>
           <li>
             <a routerLink="/request-quote" class="quote-nav-link">
               <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'طلب تسعيرة توريد' : 'Request a Quote' }}</span>
+              <span>{{ langService.t.nav.quote }}</span>
             </a>
           </li>
         </ul>
@@ -69,17 +61,17 @@
       <!-- Services List Col -->
       <div class="footer-col">
         <h4 class="footer-heading">
-          {{ langService.currentLang === 'ar' ? 'الخدمات المعتمدة' : 'Official Services' }}
+          {{ langService.t.footer.servicesHeading }}
         </h4>
         <div class="footer-gold-bar"></div>
         <ul class="footer-services-list">
-          @for (service of servicesList; track service.id) {
-            <li>
-              <a routerLink="/services">
-                <i class="fa-solid fa-angle-left footer-service-bullet"></i>
-                <span>{{ langService.currentLang === 'ar' ? service.titleAr : service.titleEn }}</span>
-              </a>
-            </li>
+          @for (service of langService.t.services.items; track service.id) {
+          <li>
+            <a routerLink="/services">
+              <i class="fa-solid fa-angle-left footer-service-bullet"></i>
+              <span>{{ service.title }}</span>
+            </a>
+          </li>
           }
         </ul>
       </div>
@@ -87,40 +79,40 @@
       <!-- Direct Contact Channels Col -->
       <div class="footer-col">
         <h4 class="footer-heading">
-          {{ langService.currentLang === 'ar' ? 'التواصل المباشر' : 'Direct Channels' }}
+          {{ langService.t.footer.contactHeading }}
         </h4>
         <div class="footer-gold-bar"></div>
-        
+
         <div class="footer-contact-items">
           <div class="contact-item">
-            <span class="c-label">{{ langService.currentLang === 'ar' ? 'واتساب المباشر:' : 'Direct WhatsApp:' }}</span>
-            <a href="https://wa.me/966543126396" target="_blank" rel="noopener noreferrer" class="c-val wa-link" dir="ltr">
+            <span class="c-label">{{ langService.t.footer.whatsappLabel }}</span>
+            <a href="https://wa.me/966543126396" target="_blank" rel="noopener noreferrer" class="c-val wa-link">
               <i class="fa-brands fa-whatsapp c-icon"></i>
-              <span>+966 54 312 6396</span>
+              <span class="c-val-content" dir="ltr">{{ langService.t.meta.whatsapp }}</span>
             </a>
           </div>
 
           <div class="contact-item">
-            <span class="c-label">{{ langService.currentLang === 'ar' ? 'الاتصال المباشر:' : 'Phone Inquiry:' }}</span>
-            <a href="tel:+966543126396" class="c-val" dir="ltr">
+            <span class="c-label">{{ langService.t.footer.phoneLabel }}</span>
+            <a href="tel:+966543126396" class="c-val">
               <i class="fa-solid fa-phone c-icon"></i>
-              <span>+966 54 312 6396</span>
+              <span class="c-val-content" dir="ltr">{{ langService.t.meta.phone }}</span>
             </a>
           </div>
 
           <div class="contact-item">
-            <span class="c-label">{{ langService.currentLang === 'ar' ? 'البريد الإلكتروني:' : 'Official Email:' }}</span>
+            <span class="c-label">{{ langService.t.footer.emailLabel }}</span>
             <a href="mailto:info@masaned-aser.com" class="c-val">
               <i class="fa-solid fa-envelope c-icon"></i>
-              <span>info@masaned-aser.com</span>
+              <span class="c-val-content" dir="ltr">{{ langService.t.meta.email }}</span>
             </a>
           </div>
 
           <div class="contact-item">
-            <span class="c-label">{{ langService.currentLang === 'ar' ? 'المقر الرئيسي:' : 'Headquarters:' }}</span>
+            <span class="c-label">{{ langService.t.footer.locationLabel }}</span>
             <span class="c-val-text">
               <i class="fa-solid fa-location-dot c-icon"></i>
-              <span>{{ langService.currentLang === 'ar' ? 'الرياض — المملكة العربية السعودية' : 'Riyadh — Kingdom of Saudi Arabia' }}</span>
+              <span class="c-val-content">{{ langService.t.meta.location }}</span>
             </span>
           </div>
         </div>
@@ -131,16 +123,8 @@
     <!-- Bottom Copyright Bar -->
     <div class="footer-bottom">
       <p class="copyright-text">
-        &copy; {{ currentYear }} {{ langService.currentLang === 'ar' ? 'مساند أسر للإمدادات والوساطة التجارية. جميع الحقوق محفوظة.' : 'Masaned Aser for Supply & Commercial Brokerage. All rights reserved.' }}
+        &copy; {{ currentYear }} {{ langService.t.meta.companyFullName }}. {{ langService.t.footer.rights }}
       </p>
-      <div class="footer-bottom-links">
-        <a routerLink="/request-quote">{{ langService.currentLang === 'ar' ? 'طلب تسعيرة' : 'Request a Quote' }}</a>
-        <span class="dot-sep">·</span>
-        <button type="button" (click)="langService.toggleLanguage()" class="footer-lang-toggle">
-          <i class="fa-solid fa-globe footer-lang-ico"></i>
-          <span>{{ langService.currentLang === 'ar' ? 'English Version' : 'النسخة العربية' }}</span>
-        </button>
-      </div>
     </div>
 
   </div>

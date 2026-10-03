@@ -11,41 +11,31 @@
     <div class="hero-top-eyebrow">
       <span class="eyebrow-line-gold"></span>
       <span class="eyebrow-text">
-        {{ langService.currentLang === 'ar' ? 'مساند أسر للإمدادات والوساطة التجارية' : 'MASANED ASER · SUPPLY &
-        COMMERCIAL BROKERAGE' }}
+        {{ langService.t.hero.eyebrow }}
       </span>
     </div>
 
     <!-- Monumental Headline -->
     <h1 class="hero-cinematic-title">
-      @if (langService.currentLang === 'ar') {
-      حلول متكاملة في <span class="gold-gradient-text">توريد الأعمال</span><br />
-      والوساطة التجارية <span class="gold-gradient-text">المهنية</span>
-      } @else {
-      Professional Solutions in <span class="gold-gradient-text">Business Supply</span><br />
-      & Trusted <span class="gold-gradient-text">Commercial Brokerage</span>
-      }
+      {{ langService.t.hero.titleLine1 }}<br />
+      <span class="gold-gradient-text">{{ langService.t.hero.titleLine2 }}</span>
     </h1>
 
     <!-- Subtitle Manifesto -->
     <p class="hero-cinematic-lead">
-      @if (langService.currentLang === 'ar') {
-      نساعد الشركات والمشروعات على تلبية احتياجاتها من التوريد من خلال البحث عن الموردين المناسبين، وجمع عروض الأسعار ومقارنتها، ومتابعة مراحل التنفيذ بدقة وموثوقية.
-      } @else {
-      We assist businesses and projects in fulfilling their procurement needs by sourcing suitable suppliers, collecting and comparing quotations, and coordinating execution with precision and reliability.
-      }
+      {{ langService.t.hero.description }}
     </p>
 
     <!-- Two Hero Action Buttons (Side by Side on Desktop) -->
     <div class="hero-actions-row">
       <a routerLink="/request-quote" class="hero-btn-primary">
-        <span>{{ langService.currentLang === 'ar' ? 'طلب تسعيرة توريد' : 'Request a Quote' }}</span>
+        <span>{{ langService.t.hero.ctaQuote }}</span>
         <i class="fa-solid btn-arrow" [class.fa-arrow-left]="langService.currentLang === 'ar'"
           [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
       </a>
 
       <a routerLink="/services" class="hero-btn-secondary">
-        <span>{{ langService.currentLang === 'ar' ? 'استكشف خدماتنا' : 'Explore Services' }}</span>
+        <span>{{ langService.t.hero.ctaServices }}</span>
         <i class="fa-solid btn-arrow" [class.fa-arrow-left]="langService.currentLang === 'ar'"
           [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
       </a>

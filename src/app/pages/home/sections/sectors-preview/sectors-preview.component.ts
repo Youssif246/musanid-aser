@@ -13,23 +13,18 @@ import { sectors } from '../../../../shared/data/sectors';
 export class SectorsPreviewComponent {
   langService = inject(LanguageService);
 
-  // Dominant Primary Sector Block (01 — الشركات والمؤسسات)
-  primarySector = {
-    ...sectors[0],
-    num: '01',
+  primarySectorMeta = {
+    index: 0,
     image: 'sectors/companies-organizations.jpg'
   };
 
-  // Secondary Stacked Sectors (02 — المطاعم والمقاهي & 03 — المشاريع والأعمال)
-  secondarySectors = [
+  secondarySectorsMeta = [
     {
-      ...sectors[1],
-      num: '02',
+      index: 1,
       image: 'sectors/restaurants-cafes.jpg'
     },
     {
-      ...sectors[4], // id: 5 (المشاريع والأعمال)
-      num: '03',
+      index: 4,
       image: 'sectors/projects-businesses.jpg'
     }
   ];

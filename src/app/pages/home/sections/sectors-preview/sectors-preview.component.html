@@ -9,26 +9,20 @@
         <div class="sectors-label-row">
           <span class="sectors-gold-marker"></span>
           <span class="sectors-label-text">
-            {{ langService.currentLang === 'ar' ? 'القطاعات' : 'SECTORS' }}
+            {{ langService.t.sectors.label }}
           </span>
         </div>
 
         <!-- Main Heading in Unified IBM Plex Sans Arabic -->
         <h2 class="sectors-heading">
-          @if (langService.currentLang === 'ar') {
-            تمكين <span class="gold-accent-text">القطاعات الحيوية</span> التي تقود الحراك الاقتصادي
-          } @else {
-            Empowering <span class="gold-accent-text">Vital Sectors</span> Driving Economic Growth
-          }
+          {{ langService.t.sectors.title }}
         </h2>
       </div>
 
       <!-- Supporting Paragraph -->
       <div class="sectors-header-desc">
         <p class="sectors-lead-text">
-          {{ langService.currentLang === 'ar' 
-            ? 'نقدم حلول توريد مخصصة تستجيب بدقة لاحتياجات كل قطاع، من سلاسل الإمداد المؤسسية الكبرى إلى مشاريع الضيافة والتطوير العقاري.'
-            : 'Tailored procurement frameworks addressing the distinctive operational demands of high-growth commercial verticals.' }}
+          {{ langService.t.sectors.description }}
         </p>
       </div>
 
@@ -38,27 +32,28 @@
     <div class="sectors-asymmetric-layout">
 
       <!-- Dominant Large Visual Block (01 — الشركات والمؤسسات) -->
+      @let primary = langService.t.sectors.items[primarySectorMeta.index];
       <article class="sector-block-dominant">
-        <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn">
+        <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="primary.title">
           
           <div class="sector-media-frame">
-            <img [src]="primarySector.image" [alt]="langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn" class="sector-block-img" loading="lazy" />
+            <img [src]="primarySectorMeta.image" [alt]="primary.title" class="sector-block-img" loading="lazy" />
             <div class="sector-scrim-overlay" aria-hidden="true"></div>
           </div>
 
           <div class="sector-block-content dominant-content">
             
             <div class="sector-num-row">
-              <span class="sector-num-tag">{{ primarySector.num }}</span>
+              <span class="sector-num-tag">{{ primary.num }}</span>
               <span class="sector-num-gold-rule"></span>
             </div>
 
             <h3 class="sector-block-title dominant-title">
-              {{ langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn }}
+              {{ primary.title }}
             </h3>
 
             <p class="sector-block-desc dominant-desc">
-              {{ langService.currentLang === 'ar' ? primarySector.descriptionAr : primarySector.descriptionEn }}
+              {{ primary.desc }}
             </p>
           </div>
 
@@ -67,12 +62,13 @@
 
       <!-- Two Stacked Secondary Visual Blocks (02 & 03) -->
       <div class="sectors-stacked-column">
-        @for (item of secondarySectors; track item.id) {
+        @for (meta of secondarySectorsMeta; track meta.index) {
+          @let item = langService.t.sectors.items[meta.index];
           <article class="sector-block-secondary">
-            <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn">
+            <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="item.title">
 
               <div class="sector-media-frame">
-                <img [src]="item.image" [alt]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn" class="sector-block-img" loading="lazy" />
+                <img [src]="meta.image" [alt]="item.title" class="sector-block-img" loading="lazy" />
                 <div class="sector-scrim-overlay" aria-hidden="true"></div>
               </div>
 
@@ -84,11 +80,11 @@
                 </div>
 
                 <h3 class="sector-block-title secondary-title">
-                  {{ langService.currentLang === 'ar' ? item.titleAr : item.titleEn }}
+                  {{ item.title }}
                 </h3>
 
                 <p class="sector-block-desc secondary-desc">
-                  {{ langService.currentLang === 'ar' ? item.descriptionAr : item.descriptionEn }}
+                  {{ item.desc }}
                 </p>
               </div>
 
@@ -103,7 +99,7 @@
     <div class="sectors-bottom-cta-wrap">
       <a routerLink="/sectors" class="sectors-master-cta">
         <span class="cta-label">
-          {{ langService.currentLang === 'ar' ? 'استكشف جميع القطاعات' : 'Explore All Sectors' }}
+          {{ langService.t.sectors.viewAll }}
         </span>
         <span class="cta-arrow" aria-hidden="true">
           <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
