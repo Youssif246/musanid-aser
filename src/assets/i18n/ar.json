@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "sectors": "القطاعات",
+    "quote": "طلب تسعيرة",
+    "whatsapp": "تواصل عبر واتساب"
+  },
+  "footer": {
+    "companyName": "مساند عسير للتوريد والوساطة التجارية",
+    "rights": "جميع الحقوق محفوظة",
+    "quickLinks": "روابط سريعة",
+    "services": "الخدمات",
+    "directContact": "التواصل المباشر"
+  },
+  "quote": {
+    "title": "طلب تسعيرة"
+  },
+  "actions": {
+    "switchLang": "English"
+  }
+}

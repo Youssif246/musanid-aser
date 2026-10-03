@@ -1,0 +1,566 @@
+/* ========================================================
+   MUSANED ASER — EDITORIAL STORYTELLING PROCESS JOURNEY
+   Standard CSS Only (Zero SCSS)
+   Alternating Architectural Spine Architecture (#F7F3EA Ground)
+   Unified Typography: IBM Plex Sans Arabic
+   ======================================================== */
+
+.editorial-process-section {
+  background-color: #F7F3EA; /* Refined Warm Ivory Neutral */
+  color: var(--charcoal-primary);
+  padding: 130px 0 120px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(11, 77, 77, 0.08);
+}
+
+/* Subtle Large Editorial Watermark (Pure Atmospheric Depth) */
+.process-watermark-bg {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-en);
+  font-size: 13vw;
+  font-weight: 800;
+  color: var(--teal-primary);
+  opacity: 0.018;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Master Contained Width */
+.process-master-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------
+   1. SECTION HEADER (MEASURED EDITORIAL AUTHORITY)
+   -------------------------------------------------------- */
+.process-section-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 92px;
+}
+
+.process-label-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.process-label-text {
+  font-family: var(--font-ar);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--gold-dark);
+  text-transform: uppercase;
+}
+
+[dir="ltr"] .process-label-text {
+  letter-spacing: 0.16em;
+}
+
+.process-gold-leadline {
+  width: 42px;
+  height: 1.5px;
+  background-color: var(--gold-primary);
+  display: inline-block;
+}
+
+/* Monumental Main Headline */
+.process-main-heading {
+  font-family: var(--font-ar);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--teal-primary);
+  line-height: 1.40;
+  letter-spacing: -0.01em;
+  margin: 0 0 20px;
+}
+
+[dir="ltr"] .process-main-heading {
+  font-size: 2.25rem;
+  line-height: 1.35;
+}
+
+.gold-accent-text {
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+/* Supporting Paragraph */
+.process-lead-text {
+  font-family: var(--font-ar);
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.88;
+  color: #4A5558;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+[dir="ltr"] .process-lead-text {
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* --------------------------------------------------------
+   2. THE VERTICAL PROCESS JOURNEY ARCHITECTURE
+   -------------------------------------------------------- */
+.process-journey-timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Central Continuous Architectural Spine */
+.process-journey-timeline::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(212, 175, 55, 0.45) 0%,
+    rgba(11, 77, 77, 0.15) 15%,
+    rgba(11, 77, 77, 0.15) 85%,
+    rgba(212, 175, 55, 0.45) 100%
+  );
+  z-index: 1;
+}
+
+/* --------------------------------------------------------
+   3. ALTERNATING STAGE ROWS (40-45% WIDTH + DRAMATIC WHITESPACE)
+   -------------------------------------------------------- */
+.journey-stage-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 1fr;
+  align-items: flex-start;
+  margin-bottom: 96px; /* Generous vertical spacing between stages */
+  position: relative;
+}
+
+.journey-stage-row:last-of-type {
+  margin-bottom: 48px;
+}
+
+/* Central Spine Node & Horizontal Connector Branch */
+.journey-spine-node {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 12px;
+  z-index: 2;
+}
+
+.journey-node-marker {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #F7F3EA; /* Seamless section ground */
+  border: 2px solid var(--teal-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.journey-marker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #D4AF37;
+  transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.journey-stage-row:hover .journey-node-marker {
+  border-color: #D4AF37;
+  background-color: var(--teal-primary);
+  box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.22);
+}
+
+.journey-stage-row:hover .journey-marker-dot {
+  background-color: #FFFDF8;
+  transform: scale(1.2);
+}
+
+/* Horizontal Connector Branch Line */
+.journey-branch-line {
+  position: absolute;
+  top: 22px;
+  height: 1px;
+  background-color: rgba(11, 77, 77, 0.15);
+  z-index: 2;
+  transition: background-color 0.35s ease;
+}
+
+/* In RTL: ODD stages reach right to Column 1 */
+.journey-stage-row:not(.stage-even) .journey-branch-line {
+  right: 50%;
+  width: 45px;
+}
+
+/* In RTL: EVEN stages reach left to Column 3 */
+.journey-stage-row.stage-even .journey-branch-line {
+  left: 50%;
+  width: 45px;
+}
+
+[dir="ltr"] .journey-stage-row:not(.stage-even) .journey-branch-line {
+  right: auto;
+  left: 50%;
+}
+
+[dir="ltr"] .journey-stage-row.stage-even .journey-branch-line {
+  left: auto;
+  right: 50%;
+}
+
+.journey-stage-row:hover .journey-branch-line {
+  background-color: #D4AF37;
+}
+
+/* --------------------------------------------------------
+   4. CONTENT BLOCK POSITIONING & SPACING
+   -------------------------------------------------------- */
+/* ODD Stages: Column 1 (Right in RTL, Left in LTR) */
+.journey-stage-row:not(.stage-even) .journey-stage-block {
+  grid-column: 1;
+  grid-row: 1;
+  padding-inline-end: 48px;
+}
+
+/* EVEN Stages: Column 3 (Left in RTL, Right in LTR) */
+.journey-stage-row.stage-even .journey-stage-block {
+  grid-column: 3;
+  grid-row: 1;
+  padding-inline-start: 48px;
+}
+
+/* The Editorial Stage Territory (No Box, No Card) */
+.journey-stage-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Meta Row: Micro-Label & Secondary Icon Signature */
+.journey-stage-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.journey-stage-tag {
+  font-family: var(--font-ar);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7B8588;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+[dir="ltr"] .journey-stage-tag {
+  letter-spacing: 0.12em;
+}
+
+.journey-stage-row:hover .journey-stage-tag {
+  color: var(--teal-primary);
+}
+
+.journey-stage-icon {
+  font-size: 1.85rem;
+  color: var(--teal-primary);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.journey-stage-row:hover .journey-stage-icon {
+  color: #D4AF37;
+  transform: scale(1.08);
+}
+
+/* Chapter Marker Number (Large Gold Anchor 36-44px) */
+.journey-num-wrap {
+  margin-bottom: 8px;
+}
+
+.journey-stage-num {
+  font-family: var(--font-en);
+  font-size: 2.65rem;
+  font-weight: 700;
+  color: #D4AF37; /* Editorial Gold */
+  line-height: 1;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.journey-stage-row:hover .journey-stage-num {
+  color: #B89325;
+}
+
+/* Stage Headline (Strong Typography) */
+.journey-stage-title {
+  font-family: var(--font-ar);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--teal-primary);
+  line-height: 1.45;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+  text-align: right;
+  transition: color 0.3s ease;
+}
+
+[dir="ltr"] .journey-stage-title {
+  text-align: left;
+  font-size: 1.40rem;
+  line-height: 1.38;
+}
+
+.journey-stage-row:hover .journey-stage-title {
+  color: var(--teal-deep);
+}
+
+/* Expanding Title Accent Underline */
+.journey-title-accent {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(11, 77, 77, 0.08);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.title-accent-gold {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 2px;
+  background-color: #D4AF37;
+  transition: width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+[dir="ltr"] .title-accent-gold {
+  right: auto;
+  left: 0;
+}
+
+.journey-stage-row:hover .title-accent-gold {
+  width: 76px;
+}
+
+/* Supporting Description */
+.journey-stage-desc {
+  font-family: var(--font-ar);
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.88;
+  color: #4A5558;
+  margin: 0;
+  max-width: 440px;
+  text-align: right;
+}
+
+[dir="ltr"] .journey-stage-desc {
+  text-align: left;
+  font-size: 0.92rem;
+  line-height: 1.76;
+}
+
+/* --------------------------------------------------------
+   5. PREMIUM TERMINAL CONCLUSION
+   -------------------------------------------------------- */
+.journey-terminal-conclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.terminal-spine-anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terminal-node-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D4AF37;
+  margin-bottom: 10px;
+}
+
+.terminal-crossbar {
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.2) 0%,
+    #D4AF37 50%,
+    rgba(212, 175, 55, 0.2) 100%
+  );
+}
+
+.terminal-statement {
+  font-family: var(--font-ar);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--teal-primary);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+[dir="ltr"] .terminal-statement {
+  font-size: 0.98rem;
+}
+
+/* --------------------------------------------------------
+   6. RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------- */
+@media (max-width: 992px) {
+  .editorial-process-section {
+    padding: 100px 0 90px;
+  }
+
+  .process-main-heading {
+    font-size: 2.2rem;
+  }
+
+  [dir="ltr"] .process-main-heading {
+    font-size: 1.95rem;
+  }
+
+  .journey-stage-row {
+    grid-template-columns: 1fr 70px 1fr;
+    margin-bottom: 76px;
+  }
+
+  .journey-stage-row:not(.stage-even) .journey-stage-block {
+    padding-inline-end: 28px;
+  }
+
+  .journey-stage-row.stage-even .journey-stage-block {
+    padding-inline-start: 28px;
+  }
+
+  .journey-stage-title {
+    font-size: 1.40rem;
+  }
+
+  .journey-stage-num {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .editorial-process-section {
+    padding: 75px 0 65px;
+  }
+
+  .process-master-container {
+    padding: 0 24px;
+  }
+
+  .process-section-header {
+    margin-bottom: 60px;
+  }
+
+  .process-main-heading {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  [dir="ltr"] .process-main-heading {
+    font-size: 1.55rem;
+  }
+
+  .process-lead-text {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  /* Single-sided vertical spine on the right (in RTL) */
+  .process-journey-timeline::before {
+    left: auto;
+    right: 11px;
+    transform: none;
+    top: 20px;
+    bottom: 90px;
+  }
+
+  [dir="ltr"] .process-journey-timeline::before {
+    right: auto;
+    left: 11px;
+  }
+
+  .journey-stage-row {
+    grid-template-columns: 24px 1fr;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+
+  .journey-spine-node {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    padding-top: 6px;
+  }
+
+  .journey-branch-line {
+    display: none;
+  }
+
+  .journey-stage-row .journey-stage-block {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    padding: 0 !important;
+  }
+
+  .journey-stage-num {
+    font-size: 2.1rem;
+  }
+
+  .journey-stage-title {
+    font-size: 1.25rem;
+  }
+
+  .journey-stage-desc {
+    font-size: 0.90rem;
+    max-width: 100%;
+  }
+
+  .terminal-statement {
+    font-size: 0.94rem;
+  }
+}

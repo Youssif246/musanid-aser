@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "sectors": "Sectors",
+    "quote": "Request a Quote",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "companyName": "Musaned Aser – Supply & Commercial Brokerage",
+    "rights": "All rights reserved",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "directContact": "Direct Contact"
+  },
+  "quote": {
+    "title": "Request a Quote"
+  },
+  "actions": {
+    "switchLang": "العربية"
+  }
+}

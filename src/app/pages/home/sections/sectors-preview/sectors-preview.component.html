@@ -1,0 +1,115 @@
+<section class="editorial-sectors-section">
+  <div class="sectors-inner-container">
+
+    <!-- Section Header (Balanced Editorial Header) -->
+    <header class="sectors-header">
+      
+      <div class="sectors-header-content">
+        <!-- Small Section Label -->
+        <div class="sectors-label-row">
+          <span class="sectors-gold-marker"></span>
+          <span class="sectors-label-text">
+            {{ langService.currentLang === 'ar' ? 'القطاعات' : 'SECTORS' }}
+          </span>
+        </div>
+
+        <!-- Main Heading in Unified IBM Plex Sans Arabic -->
+        <h2 class="sectors-heading">
+          @if (langService.currentLang === 'ar') {
+            تمكين <span class="gold-accent-text">القطاعات الحيوية</span> التي تقود الحراك الاقتصادي
+          } @else {
+            Empowering <span class="gold-accent-text">Vital Sectors</span> Driving Economic Growth
+          }
+        </h2>
+      </div>
+
+      <!-- Supporting Paragraph -->
+      <div class="sectors-header-desc">
+        <p class="sectors-lead-text">
+          {{ langService.currentLang === 'ar' 
+            ? 'نقدم حلول توريد مخصصة تستجيب بدقة لاحتياجات كل قطاع، من سلاسل الإمداد المؤسسية الكبرى إلى مشاريع الضيافة والتطوير العقاري.'
+            : 'Tailored procurement frameworks addressing the distinctive operational demands of high-growth commercial verticals.' }}
+        </p>
+      </div>
+
+    </header>
+
+    <!-- Asymmetrical Editorial Composition (Distinct from Services) -->
+    <div class="sectors-asymmetric-layout">
+
+      <!-- Dominant Large Visual Block (01 — الشركات والمؤسسات) -->
+      <article class="sector-block-dominant">
+        <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn">
+          
+          <div class="sector-media-frame">
+            <img [src]="primarySector.image" [alt]="langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn" class="sector-block-img" loading="lazy" />
+            <div class="sector-scrim-overlay" aria-hidden="true"></div>
+          </div>
+
+          <div class="sector-block-content dominant-content">
+            
+            <div class="sector-num-row">
+              <span class="sector-num-tag">{{ primarySector.num }}</span>
+              <span class="sector-num-gold-rule"></span>
+            </div>
+
+            <h3 class="sector-block-title dominant-title">
+              {{ langService.currentLang === 'ar' ? primarySector.titleAr : primarySector.titleEn }}
+            </h3>
+
+            <p class="sector-block-desc dominant-desc">
+              {{ langService.currentLang === 'ar' ? primarySector.descriptionAr : primarySector.descriptionEn }}
+            </p>
+          </div>
+
+        </a>
+      </article>
+
+      <!-- Two Stacked Secondary Visual Blocks (02 & 03) -->
+      <div class="sectors-stacked-column">
+        @for (item of secondarySectors; track item.id) {
+          <article class="sector-block-secondary">
+            <a routerLink="/sectors" class="sector-block-link" [attr.aria-label]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn">
+
+              <div class="sector-media-frame">
+                <img [src]="item.image" [alt]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn" class="sector-block-img" loading="lazy" />
+                <div class="sector-scrim-overlay" aria-hidden="true"></div>
+              </div>
+
+              <div class="sector-block-content secondary-content">
+                
+                <div class="sector-num-row">
+                  <span class="sector-num-tag">{{ item.num }}</span>
+                  <span class="sector-num-gold-rule"></span>
+                </div>
+
+                <h3 class="sector-block-title secondary-title">
+                  {{ langService.currentLang === 'ar' ? item.titleAr : item.titleEn }}
+                </h3>
+
+                <p class="sector-block-desc secondary-desc">
+                  {{ langService.currentLang === 'ar' ? item.descriptionAr : item.descriptionEn }}
+                </p>
+              </div>
+
+            </a>
+          </article>
+        }
+      </div>
+
+    </div>
+
+    <!-- Final Section Editorial CTA -->
+    <div class="sectors-bottom-cta-wrap">
+      <a routerLink="/sectors" class="sectors-master-cta">
+        <span class="cta-label">
+          {{ langService.currentLang === 'ar' ? 'استكشف جميع القطاعات' : 'Explore All Sectors' }}
+        </span>
+        <span class="cta-arrow" aria-hidden="true">
+          <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>

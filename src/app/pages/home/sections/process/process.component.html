@@ -1,0 +1,110 @@
+<section class="editorial-process-section">
+  
+  <!-- Subtle Large Editorial Watermark (Opacity 0.02 - Pure Atmosphere) -->
+  <div class="process-watermark-bg" aria-hidden="true">
+    <span>01 → 06</span>
+  </div>
+
+  <div class="process-master-container">
+
+    <!-- Section Header (Editorial & Measured Authority) -->
+    <header class="process-section-header">
+      
+      <!-- Small Gold Label with Editorial Line -->
+      <div class="process-label-row">
+        <span class="process-label-text">
+          {{ langService.currentLang === 'ar' ? 'مسار الطلب والتنفيذ' : 'OPERATIONAL MILESTONES' }}
+        </span>
+        <span class="process-gold-leadline" aria-hidden="true"></span>
+      </div>
+
+      <!-- Main Editorial Headline in IBM Plex Sans Arabic -->
+      <h2 class="process-main-heading">
+        @if (langService.currentLang === 'ar') {
+          منهجية تنفيذية من استلام الطلب <span class="gold-accent-text">حتى التسليم</span>
+        } @else {
+          Disciplined Operational Framework <span class="gold-accent-text">through Handover</span>
+        }
+      </h2>
+
+      <!-- Supporting Paragraph -->
+      <p class="process-lead-text">
+        {{ langService.currentLang === 'ar'
+          ? 'ست محطات عمل دقيقة تضمن الشفافية المالية الكاملة، مطابقة المواصفات الهندسية، والالتزام الصارم بالجداول الزمنية.'
+          : 'Six precision milestones ensuring total fiscal transparency, rigorous technical adherence, and timeline dependability.' }}
+      </p>
+
+    </header>
+
+    <!-- The Vertical Process Journey Architecture -->
+    <div class="process-journey-timeline">
+
+      @for (item of processSteps; track item.step; let idx = $index) {
+        <article class="journey-stage-row" [class.stage-even]="idx % 2 === 1">
+          
+          <!-- Central Spine Node & Horizontal Architectural Branch -->
+          <div class="journey-spine-node" aria-hidden="true">
+            <div class="journey-node-marker">
+              <span class="journey-marker-dot"></span>
+            </div>
+            <!-- Horizontal Branch Line connecting Spine to Content -->
+            <span class="journey-branch-line"></span>
+          </div>
+
+          <!-- Editorial Stage Territory (No Box / No Cards) -->
+          <div class="journey-stage-block">
+            
+            <!-- Stage Micro-Label & Secondary Icon Signature -->
+            <div class="journey-stage-meta">
+              <div class="journey-meta-badge">
+                <span class="journey-stage-tag">
+                  {{ langService.currentLang === 'ar' ? item.stageAr : item.stageEn }}
+                </span>
+              </div>
+              <span class="journey-stage-icon" aria-hidden="true">
+                <i [class]="item.icon"></i>
+              </span>
+            </div>
+
+            <!-- Chapter Marker Number (Large Gold Anchor 36-44px) -->
+            <div class="journey-num-wrap">
+              <span class="journey-stage-num">{{ item.step }}</span>
+            </div>
+
+            <!-- Stage Headline (Strong 1.55rem Typography) -->
+            <h3 class="journey-stage-title">
+              {{ langService.currentLang === 'ar' ? item.titleAr : item.titleEn }}
+            </h3>
+
+            <!-- Subtle Gold Accent Rule Under Title (Expands smoothly on hover) -->
+            <div class="journey-title-accent" aria-hidden="true">
+              <span class="title-accent-gold"></span>
+            </div>
+
+            <!-- Supporting Description -->
+            <p class="journey-stage-desc">
+              {{ langService.currentLang === 'ar' ? item.descAr : item.descEn }}
+            </p>
+
+          </div>
+
+        </article>
+      }
+
+      <!-- Premium Terminal Ending Conclusion -->
+      <div class="journey-terminal-conclusion">
+        <div class="terminal-spine-anchor" aria-hidden="true">
+          <span class="terminal-node-dot"></span>
+          <span class="terminal-crossbar"></span>
+        </div>
+        <p class="terminal-statement">
+          {{ langService.currentLang === 'ar'
+            ? 'من الطلب إلى التسليم، بتنسيق ومتابعة دقيقة.'
+            : 'From inquiry to final handover with rigorous operational governance.' }}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

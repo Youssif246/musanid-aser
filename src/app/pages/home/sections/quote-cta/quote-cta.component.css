@@ -1,0 +1,263 @@
+/* ========================================================
+   MUSANED ASER — CINEMATIC EDITORIAL CLOSING CTA
+   Standard CSS Only (Zero SCSS)
+   Compact Height (~480-520px) + Full-Bleed Photograph (/cta.png)
+   Luminous Sunlight on Executive / High Contrast on Text
+   Unified Typography: IBM Plex Sans Arabic
+   ======================================================== */
+
+.editorial-cinematic-cta {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  background-color: #063A3A;
+  background-image: url('/cta.png');
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 75px 0 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-bottom: none;
+}
+
+/* Sophisticated Directional Overlay:
+   Right side (text area): rich Deep Teal (~0.86 - 0.68) for crisp legibility.
+   Left side (photography area): drops down to 0.08 so the Saudi executive, Riyadh towers, and sunlight stay vibrant. */
+.cta-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to left,
+    rgba(5, 42, 42, 0.86) 0%,
+    rgba(5, 42, 42, 0.68) 42%,
+    rgba(5, 42, 42, 0.24) 74%,
+    rgba(5, 42, 42, 0.08) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+[dir="ltr"] .cta-cinematic-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(5, 42, 42, 0.86) 0%,
+    rgba(5, 42, 42, 0.68) 42%,
+    rgba(5, 42, 42, 0.24) 74%,
+    rgba(5, 42, 42, 0.08) 100%
+  );
+}
+
+/* Master Container */
+.cta-master-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Editorial Layout: Asymmetric Right-Aligned Content (In RTL) */
+.cta-editorial-layout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cta-content-column {
+  width: 100%;
+  max-width: 580px;
+  text-align: right;
+}
+
+[dir="ltr"] .cta-content-column {
+  text-align: left;
+}
+
+/* Top Editorial Brand Label */
+.cta-editorial-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cta-label-text {
+  font-family: var(--font-ar);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  color: #D4AF37;
+  text-transform: uppercase;
+}
+
+[dir="ltr"] .cta-label-text {
+  letter-spacing: 0.14em;
+}
+
+.cta-gold-line {
+  width: 36px;
+  height: 1.5px;
+  background-color: #D4AF37;
+  display: inline-block;
+}
+
+/* Main Heading (Controlled 48-52px Scale with White + Gold Separation) */
+.cta-cinematic-heading {
+  font-family: var(--font-ar);
+  font-size: 2.35rem; /* ~48px - 52px */
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heading-white-line {
+  color: #FFFFFF;
+}
+
+.heading-gold-line {
+  color: #D4AF37;
+}
+
+[dir="ltr"] .cta-cinematic-heading {
+  font-size: 2.15rem;
+  line-height: 1.30;
+}
+
+/* Supporting Paragraph (Subtle & Restrained) */
+.cta-cinematic-lead {
+  font-family: var(--font-ar);
+  font-size: 0.96rem; /* ~15.5px */
+  font-weight: 400;
+  line-height: 1.82;
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 540px;
+  margin: 0 0 28px;
+}
+
+[dir="ltr"] .cta-cinematic-lead {
+  font-size: 0.92rem;
+  line-height: 1.74;
+}
+
+/* CTA Action Button */
+.cta-action-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cta-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #D4AF37;
+  color: #0B4D4D;
+  font-family: var(--font-ar);
+  font-size: 0.98rem;
+  font-weight: 600;
+  height: 52px;
+  padding: 0 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  transition: background-color 0.25s ease,
+              transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.cta-btn-gold:hover {
+  background-color: #C09A2B;
+  color: #063A3A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.32);
+}
+
+.cta-btn-arrow {
+  font-size: 0.88rem;
+  transition: transform 0.25s ease;
+}
+
+[dir="rtl"] .cta-btn-gold:hover .cta-btn-arrow {
+  transform: translateX(-4px);
+}
+
+[dir="ltr"] .cta-btn-gold:hover .cta-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .editorial-cinematic-cta {
+    min-height: 460px;
+    padding: 65px 0 60px;
+    background-position: 30% center;
+  }
+
+  .cta-cinematic-heading {
+    font-size: 2.1rem;
+  }
+
+  [dir="ltr"] .cta-cinematic-heading {
+    font-size: 1.9rem;
+  }
+
+  .cta-content-column {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .editorial-cinematic-cta {
+    min-height: auto;
+    padding: 60px 0 55px;
+    background-position: 75% center;
+  }
+
+  .cta-cinematic-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 42, 42, 0.82) 0%,
+      rgba(6, 48, 48, 0.88) 50%,
+      rgba(5, 42, 42, 0.94) 100%
+    );
+  }
+
+  .cta-master-container {
+    padding: 0 20px;
+  }
+
+  .cta-content-column {
+    max-width: 100%;
+  }
+
+  .cta-cinematic-heading {
+    font-size: 1.8rem;
+    line-height: 1.36;
+  }
+
+  [dir="ltr"] .cta-cinematic-heading {
+    font-size: 1.6rem;
+  }
+
+  .cta-cinematic-lead {
+    font-size: 0.92rem;
+    line-height: 1.72;
+    margin-bottom: 24px;
+  }
+
+  .cta-btn-gold {
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    font-size: 0.95rem;
+  }
+}

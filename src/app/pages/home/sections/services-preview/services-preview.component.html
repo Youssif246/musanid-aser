@@ -1,0 +1,86 @@
+<section class="editorial-services-section">
+  <div class="services-inner-container">
+
+    <!-- Section Header (Editorial, Centered & Restrained) -->
+    <header class="services-header">
+
+      <!-- Small Section Label -->
+      <div class="services-label-row">
+        <span class="services-gold-marker"></span>
+        <span class="services-label-text">
+          {{ langService.currentLang === 'ar' ? 'منظومة الخدمات' : 'CAPABILITIES INDEX' }}
+        </span>
+      </div>
+
+      <!-- Main Heading in Amiri Display Font -->
+      <h2 class="services-heading">
+        @if (langService.currentLang === 'ar') {
+          حلول توريد مؤسسية تلبي <span class="gold-accent-text">طموحات الأعمال</span>
+        } @else {
+          Enterprise Supply Solutions Engineered for <span class="gold-accent-text">Business Scale</span>
+        }
+      </h2>
+
+      <!-- Short Supporting Paragraph (UI Font) -->
+      <p class="services-lead-text">
+        @if (langService.currentLang === 'ar') {
+          نقدم حلولاً متكاملة لتأمين مستلزمات المشاريع، حوكمة الأسعار، وإدارة الوساطة التجارية بكفاءة مطلقة وفق أعلى معايير الجودة والموثوقية.
+        } @else {
+          Integrated capabilities engineered to secure enterprise procurement, govern commercial pricing, and broker critical partnerships with uncompromising precision.
+        }
+      </p>
+
+    </header>
+
+    <!-- Three Editorial Image-Based Service Blocks -->
+    <div class="services-editorial-grid">
+      @for (item of featuredServices; track item.id) {
+        <article class="service-image-block">
+          <a routerLink="/services" class="service-block-link" [attr.aria-label]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn">
+
+            <!-- Imagery Media Container -->
+            <div class="service-media-frame">
+              <img [src]="item.image" [alt]="langService.currentLang === 'ar' ? item.titleAr : item.titleEn" class="service-block-img" loading="lazy" />
+              <!-- Subtle lower Deep Teal gradient overlay for typography readability -->
+              <div class="service-scrim-overlay" aria-hidden="true"></div>
+            </div>
+
+            <!-- Integrated Content Overlay -->
+            <div class="service-block-content">
+              
+              <!-- Subtle Number Marker with Expanding Gold Rule -->
+              <div class="service-num-row">
+                <span class="service-num-tag">{{ item.num }}</span>
+                <span class="service-num-gold-rule"></span>
+              </div>
+
+              <!-- Service Title -->
+              <h3 class="service-block-title">
+                {{ langService.currentLang === 'ar' ? item.titleAr : item.titleEn }}
+              </h3>
+
+              <!-- Short Description -->
+              <p class="service-block-desc">
+                {{ langService.currentLang === 'ar' ? item.descriptionAr : item.descriptionEn }}
+              </p>
+            </div>
+
+          </a>
+        </article>
+      }
+    </div>
+
+    <!-- Final Section Editorial CTA -->
+    <div class="services-bottom-cta-wrap">
+      <a routerLink="/services" class="services-master-cta">
+        <span class="cta-label">
+          {{ langService.currentLang === 'ar' ? 'استكشف جميع خدماتنا' : 'Explore All Services' }}
+        </span>
+        <span class="cta-arrow" aria-hidden="true">
+          <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang !== 'ar'"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>
