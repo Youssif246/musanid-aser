@@ -28,11 +28,8 @@
   z-index: 0;
 }
 
+/* Master Contained Width — inherits .editorial-container */
 .process-master-container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 32px;
   position: relative;
   z-index: 1;
 }
@@ -416,66 +413,97 @@
 
 @media (max-width: 768px) {
   .editorial-process-section {
-    padding: 70px 0 60px;
+    padding: 60px 0 52px;
   }
 
-  .process-master-container {
-    padding: 0 20px;
+  .process-ambient-glow {
+    width: 340px;
+    height: 340px;
+    top: 10%;
   }
 
   .process-section-header {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
   }
 
   .process-main-heading {
-    font-size: 1.85rem;
+    font-size: clamp(1.48rem, 5vw, 1.85rem);
     line-height: 1.36;
   }
 
   .process-lead-text {
-    font-size: 0.94rem;
+    font-size: 0.90rem;
+    line-height: 1.72;
   }
 
   /* Single Column Spine */
   .process-journey-timeline::before {
     left: auto;
-    right: 12px;
+    right: 11px;
     transform: none;
-    top: 20px;
-    bottom: 70px;
+    top: 24px;
+    bottom: 50px;
   }
 
   [dir="ltr"] .process-journey-timeline::before {
     right: auto;
-    left: 12px;
+    left: 11px;
   }
 
   .journey-stage-row {
     grid-template-columns: 24px 1fr;
-    gap: 16px;
-    margin-bottom: 26px;
+    gap: 14px;
+    margin-bottom: 20px;
+    align-items: flex-start;
   }
 
   .journey-spine-node {
     grid-column: 1 !important;
     grid-row: 1 !important;
+    align-self: flex-start;
+    margin-top: 24px;
   }
 
   .journey-stage-row .journey-stage-card {
     grid-column: 2 !important;
     grid-row: 1 !important;
-    padding: 22px 20px;
+    padding: 20px 16px;
   }
 
   .stage-prominent-num {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 
   .stage-card-title {
-    font-size: 1.20rem;
+    font-size: 1.15rem;
   }
 
   .stage-card-desc {
+    font-size: 0.88rem;
+    line-height: 1.75;
+  }
+
+  .journey-terminal-conclusion {
+    margin-top: 28px;
+    padding: 0 8px;
+  }
+
+  .terminal-statement {
     font-size: 0.90rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 380px) {
+  .journey-stage-row {
+    gap: 10px;
+  }
+
+  .journey-stage-row .journey-stage-card {
+    padding: 18px 14px;
+  }
+
+  .stage-card-title {
+    font-size: 1.05rem;
   }
 }

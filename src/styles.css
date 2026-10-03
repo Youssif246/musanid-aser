@@ -229,3 +229,33 @@ button {
 .main-content {
   min-height: calc(100vh - 280px);
 }
+
+/* Mobile Viewport Safety & Scroll Margins */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+app-hero,
+app-introduction,
+app-services-preview,
+app-sectors-preview,
+app-why-us,
+app-process,
+app-quote-cta,
+.site-footer {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 640px) {
+  app-hero,
+  app-introduction,
+  app-services-preview,
+  app-sectors-preview,
+  app-why-us,
+  app-process,
+  app-quote-cta,
+  .site-footer {
+    scroll-margin-top: 72px;
+  }
+}

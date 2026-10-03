@@ -14,12 +14,9 @@
   border-bottom: 1px solid rgba(11, 77, 77, 0.08);
 }
 
-/* Master Contained Width */
+/* Master Contained Width — inherits .editorial-container */
 .sectors-inner-container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 32px;
+  position: relative;
 }
 
 /* --------------------------------------------------------
@@ -402,67 +399,87 @@
 
 @media (max-width: 640px) {
   .editorial-sectors-section {
-    padding: 70px 0 60px;
-  }
-
-  .sectors-inner-container {
-    padding: 0 20px;
+    padding: 60px 0 52px;
   }
 
   .sectors-heading {
-    font-size: 1.7rem;
-    line-height: 1.4;
+    font-size: clamp(1.48rem, 5vw, 1.75rem);
+    line-height: 1.38;
   }
 
   [dir="ltr"] .sectors-heading {
-    font-size: 1.5rem;
+    font-size: clamp(1.35rem, 4.5vw, 1.55rem);
   }
 
   .sectors-lead-text {
-    font-size: 0.92rem;
-    line-height: 1.75;
+    font-size: 0.90rem;
+    line-height: 1.72;
   }
 
   .sector-block-dominant {
-    height: 390px;
+    height: auto;
+    min-height: 350px;
+    aspect-ratio: 4 / 4.6;
   }
 
   .dominant-content {
-    padding: 26px 20px 20px;
+    padding: 22px 18px 18px;
   }
 
   .dominant-title {
-    font-size: 1.35rem;
+    font-size: 1.28rem;
   }
 
   .dominant-desc {
     font-size: 0.88rem;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .sector-block-secondary {
-    height: 290px;
+    height: auto;
+    min-height: 260px;
+    aspect-ratio: 4 / 3.4;
   }
 
   .secondary-content {
-    padding: 22px 18px 18px;
+    padding: 20px 16px 16px;
   }
 
   .secondary-title {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
   }
 
   .secondary-desc {
     font-size: 0.84rem;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
   }
 
   .sectors-bottom-cta-wrap {
-    margin-top: 44px;
+    margin-top: 38px;
   }
 
   .sectors-master-cta {
     width: 100%;
+    max-width: 340px;
+    min-height: 48px;
     justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .sector-block-dominant {
+    min-height: 320px;
+  }
+
+  .sector-block-secondary {
+    min-height: 240px;
+  }
+
+  .dominant-title {
+    font-size: 1.15rem;
+  }
+
+  .secondary-title {
+    font-size: 1.05rem;
   }
 }

@@ -210,7 +210,7 @@
 @media (max-width: 640px) {
   .cinematic-hero-fullwidth {
     min-height: auto;
-    padding: 70px 0 60px;
+    padding: 60px 0 52px;
   }
 
   .hero-fullwidth-content {
@@ -219,20 +219,27 @@
   }
 
   .hero-top-eyebrow {
-    font-size: 0.76rem;
+    font-size: 0.74rem;
     margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .eyebrow-line-gold {
+    width: 20px;
   }
 
   .hero-cinematic-title {
-    font-size: 1.95rem;
-    line-height: 1.4;
+    font-size: clamp(1.62rem, 5.8vw, 1.95rem);
+    line-height: 1.38;
     margin-bottom: 14px;
+    letter-spacing: normal;
   }
 
   .hero-cinematic-lead {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 26px;
+    font-size: clamp(0.90rem, 2.8vw, 0.98rem);
+    line-height: 1.72;
+    margin-bottom: 24px;
+    padding: 0 4px;
   }
 
   .hero-actions-row {
@@ -244,7 +251,21 @@
   .hero-btn-primary,
   .hero-btn-secondary {
     width: 100%;
-    max-width: 300px;
-    padding: 12px 20px;
+    max-width: 340px;
+    min-height: 48px;
+    padding: 12px 24px;
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-cinematic-title {
+    font-size: 1.52rem;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 11px 18px;
+    font-size: 0.90rem;
   }
 }

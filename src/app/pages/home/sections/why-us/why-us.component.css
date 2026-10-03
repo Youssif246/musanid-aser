@@ -14,12 +14,9 @@
   border-bottom: 1px solid rgba(11, 77, 77, 0.08);
 }
 
-/* Master Contained Width */
+/* Master Contained Width — inherits .editorial-container */
 .standards-inner-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px;
+  position: relative;
 }
 
 /* --------------------------------------------------------
@@ -277,51 +274,60 @@
 
 @media (max-width: 640px) {
   .editorial-standards-section {
-    padding: 70px 0 60px;
-  }
-
-  .standards-inner-container {
-    padding: 0 20px;
+    padding: 60px 0 52px;
   }
 
   .standards-heading {
-    font-size: 1.7rem;
-    line-height: 1.4;
+    font-size: clamp(1.48rem, 5vw, 1.75rem);
+    line-height: 1.38;
   }
 
   [dir="ltr"] .standards-heading {
-    font-size: 1.5rem;
+    font-size: clamp(1.35rem, 4.5vw, 1.55rem);
   }
 
   .standards-lead-text {
-    font-size: 0.92rem;
-    line-height: 1.75;
+    font-size: 0.90rem;
+    line-height: 1.72;
   }
 
   .standards-trust-seal {
-    padding: 8px 16px;
-    margin-top: 20px;
+    padding: 8px 14px;
+    margin-top: 18px;
+    font-size: 0.82rem;
   }
 
   .standards-divider-line {
-    margin: 36px 0 36px;
+    margin: 30px 0;
   }
 
   .standards-editorial-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
   }
 
   .standard-editorial-card {
-    padding: 28px 22px 24px;
+    padding: 24px 18px 20px;
   }
 
   .standard-card-title {
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     min-height: auto;
+    margin-bottom: 10px;
   }
 
   .standard-card-desc {
     font-size: 0.88rem;
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: 380px) {
+  .standard-editorial-card {
+    padding: 20px 15px 18px;
+  }
+
+  .standard-card-title {
+    font-size: 0.98rem;
   }
 }
