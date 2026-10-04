@@ -199,6 +199,33 @@
   color: #40e27c;
 }
 
+.c-dual-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.c-val.c-wa-badge {
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.25);
+  font-size: 0.80rem;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.c-val.c-wa-badge .c-icon {
+  width: auto;
+  font-size: 0.85rem;
+}
+
+.c-val.c-wa-badge:hover {
+  background: rgba(37, 211, 102, 0.22);
+  border-color: rgba(37, 211, 102, 0.5);
+}
+
 .footer-lang-ico {
   font-size: 0.85rem;
   margin-inline-end: 4px;

@@ -1,14 +1,19 @@
 {
   "meta": {
-    "siteTitle": "Masaned Aser | Supply & Commercial Brokerage",
-    "siteDescription": "Masaned Aser for Business Supply and Commercial Brokerage services in Saudi Arabia. We assist enterprises in meeting procurement demands with clarity and precision.",
-    "companyName": "Masaned Aser",
-    "companyFullName": "Masaned Aser for Supply & Commercial Brokerage",
+    "siteTitle": "Musaanid Aser | Supply & Commercial Brokerage",
+    "siteDescription": "Musaanid Aser Establishment for Business Supply and Commercial Brokerage services in Saudi Arabia. We assist enterprises in meeting procurement demands with clarity and precision.",
+    "companyName": "Musaanid Aser",
+    "companyFullName": "Musaanid Aser for Supply & Commercial Brokerage",
     "cr": "Certified Saudi Commercial Registry · Riyadh",
     "location": "Riyadh — Kingdom of Saudi Arabia",
-    "phone": "+966 54 312 6396",
-    "whatsapp": "+966 54 312 6396",
-    "email": "info@masaned-aser.com"
+    "phone": "0557664765",
+    "phoneSecondary": "0531660854",
+    "phoneDisplay": "+966 55 766 4765",
+    "phoneSecondaryDisplay": "+966 53 166 0854",
+    "whatsapp": "0557664765",
+    "whatsappSecondary": "0531660854",
+    "email": "info@musaanidaser.com",
+    "domain": "musaanidaser.com"
   },
   "nav": {
     "home": "Home",
@@ -21,9 +26,9 @@
     "switchLang": "العربية"
   },
   "hero": {
-    "eyebrow": "MASANED ASER · SUPPLY & COMMERCIAL BROKERAGE",
-    "titleLine1": "Integrated Solutions in Business Supply",
-    "titleLine2": "& Professional Commercial Brokerage",
+    "eyebrow": "MUSAANID ASER · SUPPLY & COMMERCIAL BROKERAGE",
+    "titleLine1": "Business Supply Solutions",
+    "titleLine2": "& Commercial Brokerage",
     "description": "We assist businesses and projects in fulfilling their procurement needs by sourcing suitable suppliers, collecting and comparing quotations, and coordinating execution with precision and reliability.",
     "ctaQuote": "Request a Quote",
     "ctaServices": "Explore Services"
@@ -45,7 +50,7 @@
         "desc": "Providing objective quotation comparisons that detail technical and financial specifics, alongside ongoing coordination throughout execution."
       }
     ],
-    "linkText": "Explore the complete story and vision of Masaned Aser"
+    "linkText": "Explore the complete story and vision of Musaanid Aser"
   },
   "services": {
     "label": "CAPABILITIES INDEX",
@@ -57,7 +62,7 @@
         "id": 1,
         "num": "01",
         "title": "Business Supply",
-        "desc": "Fulfilling corporate equipment and operational supply requirements according to approved specifications and budgets."
+        "desc": "Fulfilling corporate equipment and operational supply requirements according to specified quality requirements and budget."
       },
       {
         "id": 2,
@@ -101,7 +106,7 @@
         "id": 1,
         "num": "01",
         "title": "Companies & Organizations",
-        "desc": "Fulfilling enterprise procurement needs with superior quality and competitive sourcing."
+        "desc": "Fulfilling enterprise procurement needs according to specified quality requirements and budget."
       },
       {
         "id": 2,
@@ -143,9 +148,9 @@
       },
       {
         "step": "02",
-        "stage": "Stage 02 · Technical Audit",
-        "title": "Technical Review & Analysis",
-        "desc": "Thorough evaluation ensuring technical clarity and compliance before sourcing."
+        "stage": "Stage 02 · Specification Review",
+        "title": "Reviewing Order & Specifications",
+        "desc": "Reviewing specifications and ensuring alignment with client requirements before supplier solicitation."
       },
       {
         "step": "03",
@@ -161,9 +166,9 @@
       },
       {
         "step": "05",
-        "stage": "Stage 05 · Contract & Approval",
-        "title": "Order Approval & Contracting",
-        "desc": "Finalizing supplier selection and commercial agreements under secure terms."
+        "stage": "Stage 05 · Procurement & Coordination",
+        "title": "Quote Selection & Contractual Coordination",
+        "desc": "Selecting the suitable quote, completing purchasing procedures, and contractual coordination."
       },
       {
         "step": "06",
@@ -177,7 +182,7 @@
     "label": "INSTITUTIONAL CRITERIA & STANDARDS",
     "title": "Professional Standards Enhancing Procurement & Governance",
     "description": "We apply a structured methodology to oversee each stage of the supply process, supporting organizations in securing optimal technical and commercial value.",
-    "trustSeal": "Total Transparency & Commercial Impartiality",
+    "trustSeal": "Committed to transparency and clarity in commercial transactions",
     "items": [
       {
         "num": "01",
@@ -204,15 +209,15 @@
   "cta": {
     "label": "INITIATE PROCUREMENT",
     "titleLine1": "Ready to Empower Your Enterprise",
-    "titleLine2": "with Structured Supply & Brokerage Solutions",
+    "titleLine2": "With Supply & Brokerage Solutions",
     "description": "Submit your procurement specifications to evaluate suitable suppliers, gather competitive quotations, and coordinate fulfillment professionally.",
     "buttonText": "Submit a Quote Request"
   },
   "about": {
-    "title": "About Masaned Aser",
+    "title": "About Musaanid Aser",
     "subtitle": "A professional institution specialized in business supply and commercial brokerage in Saudi Arabia",
     "overviewTitle": "Institutional Overview",
-    "overviewDesc": "Masaned Aser was established in Riyadh to assist enterprises and projects in managing and fulfilling their commercial supply demands with agility and clarity. Grounded in Saudi market dynamics, we offer professional coordination, quotation auditing, and structured supply follow-up, achieving an optimal balance between quality and cost.",
+    "overviewDesc": "Musaanid Aser was established in Riyadh to assist enterprises and projects in managing and fulfilling their commercial supply demands with agility and clarity. Grounded in Saudi market dynamics, we offer professional coordination, quotation auditing, and structured supply follow-up, achieving an optimal balance between quality and cost.",
     "missionTitle": "Our Mission",
     "missionDesc": "To deliver professional supply and commercial brokerage services based on transparency and precision, providing practical solutions that enable businesses to secure their operational needs with confidence.",
     "visionTitle": "Our Vision",
@@ -254,13 +259,15 @@
     "successMessage": "Your request has been submitted successfully. We will get in touch shortly to review quotations."
   },
   "footer": {
-    "companyName": "Masaned Aser for Supply & Commercial Brokerage",
+    "companyName": "Musaanid Aser for Supply & Commercial Brokerage",
     "brandDesc": "Supply & Commercial Brokerage",
     "mission": "Premier corporate procurement and commercial brokerage partner for enterprises across Saudi Arabia, ensuring rigorous quality and cost optimization.",
     "crBadge": "Certified Saudi Commercial Registry · Riyadh",
     "navHeading": "Navigation",
     "servicesHeading": "Official Services",
     "contactHeading": "Direct Channels",
+    "primaryPhoneLabel": "Primary Contact (Call / WhatsApp):",
+    "secondaryPhoneLabel": "Secondary Contact (Call / WhatsApp):",
     "whatsappLabel": "Direct WhatsApp:",
     "phoneLabel": "Phone Inquiry:",
     "emailLabel": "Official Email:",

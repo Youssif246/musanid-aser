@@ -10,5 +10,5 @@ import { LanguageService } from '../../../core/services/language.service';
 })
 export class WhatsappButtonComponent {
   langService = inject(LanguageService);
-  whatsappNumber = '966543126396';
+  whatsappNumber = '966557664765';
 }

@@ -1,4 +1,4 @@
-# مساند أسر - Masaned Aser
+# مؤسسة مساند آسر للإمداد والوساطة التجارية - Musaanid Aser
 
 ## إرشادات المحتوى والكتابة (Content Direction & Copy Guidelines)
 

@@ -4,7 +4,7 @@ export const services = [
     num: '01',
     titleAr: 'توريد الأعمال',
     titleEn: 'Business Supply',
-    descriptionAr: 'تأمين احتياجات ومستلزمات الأعمال للشركات والمنشآت وفق متطلبات الجودة والميزانية المعتمدة.',
+    descriptionAr: 'تأمين احتياجات ومستلزمات الأعمال للشركات والمنشآت وفق متطلبات الجودة والميزانية المحددة.',
     descriptionEn: 'Comprehensive supply solutions catering to corporate demands with precision quality and budget alignment.',
     image: ''
   },

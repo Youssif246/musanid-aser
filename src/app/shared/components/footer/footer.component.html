@@ -6,7 +6,7 @@
       <!-- Brand & Summary Col -->
       <div class="footer-col footer-brand-col">
         <a routerLink="/" class="footer-brand-link">
-          <img src="/logo.png" alt="مساند أسر | Masaned Aser" class="footer-logo-img" />
+          <img src="/logo.png" alt="مؤسسة مساند آسر للإمداد والوساطة التجارية | Musaanid Aser" class="footer-logo-img" />
           <div class="footer-brand-title">
             <span class="brand-ar">{{ langService.t.meta.companyName }}</span>
             <span class="brand-desc">{{ langService.t.footer.brandDesc }}</span>
@@ -84,30 +84,46 @@
         <div class="footer-gold-bar"></div>
 
         <div class="footer-contact-items">
+          <!-- Primary Number: Call + WhatsApp -->
           <div class="contact-item">
-            <span class="c-label">{{ langService.t.footer.whatsappLabel }}</span>
-            <a href="https://wa.me/966543126396" target="_blank" rel="noopener noreferrer" class="c-val wa-link">
-              <i class="fa-brands fa-whatsapp c-icon"></i>
-              <span class="c-val-content" dir="ltr">{{ langService.t.meta.whatsapp }}</span>
-            </a>
+            <span class="c-label">{{ langService.t.footer.primaryPhoneLabel }}</span>
+            <div class="c-dual-actions">
+              <a href="tel:+966557664765" class="c-val" [title]="langService.currentLang === 'ar' ? 'اتصال هاتفي' : 'Phone Call'">
+                <i class="fa-solid fa-phone c-icon"></i>
+                <span class="c-val-content" dir="ltr">055 766 4765</span>
+              </a>
+              <a href="https://wa.me/966557664765" target="_blank" rel="noopener noreferrer" class="c-val wa-link c-wa-badge" [title]="langService.currentLang === 'ar' ? 'مراسلة واتساب' : 'WhatsApp Chat'">
+                <i class="fa-brands fa-whatsapp c-icon"></i>
+                <span class="wa-badge-text">{{ langService.currentLang === 'ar' ? 'واتساب' : 'WhatsApp' }}</span>
+              </a>
+            </div>
           </div>
 
+          <!-- Secondary Number: Call + WhatsApp -->
           <div class="contact-item">
-            <span class="c-label">{{ langService.t.footer.phoneLabel }}</span>
-            <a href="tel:+966543126396" class="c-val">
-              <i class="fa-solid fa-phone c-icon"></i>
-              <span class="c-val-content" dir="ltr">{{ langService.t.meta.phone }}</span>
-            </a>
+            <span class="c-label">{{ langService.t.footer.secondaryPhoneLabel }}</span>
+            <div class="c-dual-actions">
+              <a href="tel:+966531660854" class="c-val" [title]="langService.currentLang === 'ar' ? 'اتصال هاتفي' : 'Phone Call'">
+                <i class="fa-solid fa-phone c-icon"></i>
+                <span class="c-val-content" dir="ltr">053 166 0854</span>
+              </a>
+              <a href="https://wa.me/966531660854" target="_blank" rel="noopener noreferrer" class="c-val wa-link c-wa-badge" [title]="langService.currentLang === 'ar' ? 'مراسلة واتساب' : 'WhatsApp Chat'">
+                <i class="fa-brands fa-whatsapp c-icon"></i>
+                <span class="wa-badge-text">{{ langService.currentLang === 'ar' ? 'واتساب' : 'WhatsApp' }}</span>
+              </a>
+            </div>
           </div>
 
+          <!-- Official Email -->
           <div class="contact-item">
             <span class="c-label">{{ langService.t.footer.emailLabel }}</span>
-            <a href="mailto:info@masaned-aser.com" class="c-val">
+            <a href="mailto:info@musaanidaser.com" class="c-val">
               <i class="fa-solid fa-envelope c-icon"></i>
               <span class="c-val-content" dir="ltr">{{ langService.t.meta.email }}</span>
             </a>
           </div>
 
+          <!-- Location -->
           <div class="contact-item">
             <span class="c-label">{{ langService.t.footer.locationLabel }}</span>
             <span class="c-val-text">
