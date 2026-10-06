@@ -214,33 +214,83 @@
     "buttonText": "Submit a Quote Request"
   },
   "about": {
-    "title": "About Musaanid Aser",
-    "subtitle": "A professional institution specialized in business supply and commercial brokerage in Saudi Arabia",
-    "overviewTitle": "Institutional Overview",
-    "overviewDesc": "Musaanid Aser was established in Riyadh to assist enterprises and projects in managing and fulfilling their commercial supply demands with agility and clarity. Grounded in Saudi market dynamics, we offer professional coordination, quotation auditing, and structured supply follow-up, achieving an optimal balance between quality and cost.",
-    "missionTitle": "Our Mission",
-    "missionDesc": "To deliver professional supply and commercial brokerage services based on transparency and precision, providing practical solutions that enable businesses to secure their operational needs with confidence.",
-    "visionTitle": "Our Vision",
-    "visionDesc": "To be the trusted choice for enterprises and projects in Saudi Arabia for business supply and commercial brokerage, offering an organized procurement experience that elevates service standards.",
-    "valuesTitle": "Core Values",
-    "values": [
-      {
-        "title": "Transparency & Impartiality",
-        "desc": "Delivering clear, objective quotations and comparative evaluations without bias."
-      },
-      {
-        "title": "Precision & Adherence",
-        "desc": "Ensuring strict conformity with specified technical parameters and quantities."
-      },
-      {
-        "title": "Accountability & Follow-up",
-        "desc": "Full dedication to tracking supply milestones and ensuring continuous coordination through handover."
-      },
-      {
-        "title": "Professionalism & Integrity",
-        "desc": "Building sustainable commercial relationships through credibility and business ethics."
-      }
-    ]
+    "hero": {
+      "eyebrow": "ABOUT US",
+      "title": "About Us",
+      "description": "A specialized professional institution for business supply and commercial brokerage in Saudi Arabia, offering structured and agile supply solutions that support enterprises and projects in securing the right options.",
+      "numeral": "01",
+      "metaLine": "Supply • Commercial Brokerage • Business Solutions"
+    },
+    "foundation": {
+      "eyebrow": "INSTITUTIONAL FOUNDATION",
+      "verticalWord": "FOUNDATION",
+      "statement": "Building a clearer way to procure.",
+      "p1": "Musaanid Aser for Supply & Commercial Brokerage was founded in Riyadh to deliver a structured, professional model supporting enterprises and projects in fulfilling their commercial supply demands with agility and precision.",
+      "p2": "We serve as a specialized professional nexus covering business supply, commercial brokerage, supplier sourcing, objective quotation collection and analysis, as well as disciplined fulfillment coordination through to delivery.",
+      "p3": "We focus on grasping technical parameters and exact specifications for every client, engineering custom supply solutions that align with business operations while maintaining optimal quality and reliability.",
+      "numeral": "02"
+    },
+    "vision": {
+      "label": "OUR VISION",
+      "title": "Our Vision",
+      "statement": "To be the trusted choice for enterprises and projects seeking structured, agile procurement solutions.",
+      "note": "A grounded vision stemming from the dynamics of the Saudi market and its growing demand for transparent, disciplined supply practices."
+    },
+    "mission": {
+      "label": "OUR MISSION",
+      "title": "Our Mission",
+      "statement": "Making access to the right supply solutions clearer and more structured.",
+      "description": "We are dedicated to empowering partners to fulfill operational and project requirements through structured procurement pathways—from specification scoping and supplier sourcing to rigorous quotation evaluation and accountable follow-up."
+    },
+    "purpose": {
+      "numeral": "03",
+      "label": "OUR PURPOSE",
+      "title": "Our Purpose",
+      "statement": "Building a more organized procurement experience that enables enterprises and projects to secure the right choices for their needs."
+    },
+    "principles": {
+      "label": "OUR PRINCIPLES",
+      "title": "Our Principles",
+      "items": [
+        {
+          "number": "01",
+          "title": "Clarity",
+          "desc": "Clear details and straightforward, understandable steps."
+        },
+        {
+          "number": "02",
+          "title": "Organization",
+          "desc": "Structuring the procurement process and disciplined tracking."
+        },
+        {
+          "number": "03",
+          "title": "Agility",
+          "desc": "Adaptive solutions tailored to diverse enterprise requirements."
+        },
+        {
+          "number": "04",
+          "title": "Attention to Detail",
+          "desc": "Sharp focus on specifications, standards, and vetted options."
+        }
+      ]
+    },
+    "belief": {
+      "label": "WHAT WE BELIEVE",
+      "statement": "Sound procurement does not begin with the product; it begins with understanding the need.",
+      "description": "We always start from your exact requirements and specifications to reach the most suitable and dependable supply solutions.",
+      "keywords": [
+        "UNDERSTAND",
+        "SOURCE",
+        "COMPARE",
+        "SUPPLY"
+      ]
+    },
+    "cta": {
+      "label": "START WITH US",
+      "title": "Have a Supply Requirement?",
+      "description": "Share your specifications and let us begin from your exact needs.",
+      "buttonText": "Request a Quote"
+    }
   },
   "quote": {
     "pageTitle": "Request a Supply Quotation",

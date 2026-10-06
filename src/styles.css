@@ -70,7 +70,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: var(--font-ar);
   background-color: var(--beige-light);
 }
@@ -230,10 +230,27 @@ button {
   min-height: calc(100vh - 280px);
 }
 
-/* Mobile Viewport Safety & Scroll Margins */
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
+/* Mobile Viewport Safety & Scroll Margins - Preserves sticky navbar */
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+app-root {
+  display: block;
+}
+
+app-navbar {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 app-hero,

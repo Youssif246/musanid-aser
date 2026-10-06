@@ -1,1 +1,9 @@
-/* Application shell styles - Architecture placeholder */
+/* Application shell styles */
+app-navbar {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
