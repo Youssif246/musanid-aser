@@ -61,7 +61,7 @@
 .footer-mission {
   font-size: 0.92rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 255, 255, 0.88);
   margin-bottom: 24px;
   max-width: 380px;
 }
@@ -150,8 +150,9 @@
 }
 
 .c-label {
-  font-size: 0.80rem;
-  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
   letter-spacing: 0.03em;
 }
 
@@ -239,7 +240,8 @@
   padding-top: 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 500;
   text-align: center;
 }
 

@@ -3,13 +3,13 @@
 
     <!-- Brand Logo -->
     <a routerLink="/" class="brand-link" (click)="closeMenu()">
-      <img src="/logo.png" alt="مؤسسة مساند آسر للإمداد والوساطة التجارية | Musaanid Aser" class="brand-logo-img" />
+      <img src="/logo.png" alt="مؤسسة مساند آسر للإمداد والوساطة التجارية | Musanid Aser" class="brand-logo-img" />
       <span class="brand-name">
         {{ langService.t.meta.companyName }}
       </span>
     </a>
 
-    <!-- Desktop Navigation Links (Exactly 4 official pages) -->
+    <!-- Desktop Navigation Links -->
     <nav class="desktop-navigation" aria-label="Main Navigation">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-anchor">
         {{ langService.t.nav.home }}
@@ -22,6 +22,9 @@
       </a>
       <a routerLink="/sectors" routerLinkActive="active" class="nav-anchor">
         {{ langService.t.nav.sectors }}
+      </a>
+      <a routerLink="/request-quote" routerLinkActive="active" class="nav-anchor">
+        {{ langService.t.nav.quote }}
       </a>
     </nav>
 
@@ -70,6 +73,9 @@
       </a>
       <a routerLink="/sectors" (click)="closeMenu()" routerLinkActive="mobile-active">
         {{ langService.t.nav.sectors }}
+      </a>
+      <a routerLink="/request-quote" (click)="closeMenu()" routerLinkActive="mobile-active">
+        {{ langService.t.nav.quote }}
       </a>
     </nav>
 

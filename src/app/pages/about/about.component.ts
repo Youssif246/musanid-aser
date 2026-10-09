@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { InternalHeroComponent } from '../../shared/components/internal-hero/internal-hero.component';
+import { InternalCtaComponent } from '../../shared/components/internal-cta/internal-cta.component';
 import { LanguageService } from '../../core/services/language.service';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [RouterLink],
+  imports: [InternalHeroComponent, InternalCtaComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

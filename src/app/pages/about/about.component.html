@@ -1,72 +1,19 @@
 <div class="about-page-wrapper">
 
   <!-- ========================================================
-       1. INTERNAL HERO (Editorial Brand Book Opening, 380–450px, No Image)
-       Warm Ivory #F7F3EA, Asymmetric Architectural AM Linework
+       1. UNIFIED INTERNAL HERO — ABOUT US
+       Full-Bleed Cinematic Photography + Pure Black Scrim
+       Centered Editorial Axis · No CTA (Clean & Confident)
        ======================================================== -->
-  <header class="about-hero-section" aria-labelledby="about-hero-heading">
-    
-    <!-- Subtle Architectural Background Hairlines -->
-    <div class="hero-subtle-hairlines" aria-hidden="true">
-      <div class="hero-hairline-h"></div>
-      <div class="hero-hairline-v"></div>
-    </div>
-
-    <div class="editorial-container hero-master-container">
-      <div class="hero-architectural-grid">
-        
-        <!-- Right Side: Editorial Typography & Scope Metadata -->
-        <div class="hero-copy-column">
-          
-          <div class="hero-eyebrow-row">
-            <span class="hero-gold-dash" aria-hidden="true"></span>
-            <span class="hero-eyebrow-text">{{ langService.t.about.hero.eyebrow }}</span>
-          </div>
-
-          <h1 id="about-hero-heading" class="hero-display-heading">
-            {{ langService.t.about.hero.title }}
-          </h1>
-
-          <p class="hero-statement-lead">
-            {{ langService.t.about.hero.description }}
-          </p>
-
-          <!-- Subtle Horizontal Gold Rule & Metadata Line -->
-          <div class="hero-meta-block">
-            <div class="hero-gold-rule" aria-hidden="true"></div>
-            <p class="hero-meta-line">
-              {{ langService.t.about.hero.metaLine }}
-            </p>
-          </div>
-
-        </div>
-
-        <!-- Left Side: Architectural Corporate Photography -->
-        <div class="hero-visual-column">
-          <div class="hero-executive-frame">
-            <div class="card-corner-tick tick-top-left" aria-hidden="true"></div>
-            <div class="card-corner-tick tick-top-right" aria-hidden="true"></div>
-            <div class="card-corner-tick tick-bottom-left" aria-hidden="true"></div>
-            <div class="card-corner-tick tick-bottom-right" aria-hidden="true"></div>
-
-            <div class="hero-image-viewport">
-              <img src="/about-hero.jpg"
-                   alt="{{ langService.t.about.hero.title }}"
-                   class="hero-architectural-img" />
-              <div class="hero-image-overlay" aria-hidden="true"></div>
-            </div>
-
-            <!-- Floating Executive Location Seal -->
-            <div class="hero-floating-seal" aria-hidden="true">
-              <i class="fa-solid fa-building-shield"></i>
-              <span>الرياض · المملكة العربية السعودية</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </header>
+  <app-internal-hero
+    bgImage="/about-hero.jpg"
+    [eyebrow]="langService.t.about.hero.eyebrow"
+    [title]="langService.t.about.hero.title"
+    [description]="langService.t.about.hero.description"
+    [ctaText]="langService.t.about.hero.ctaVision"
+    ctaLink="#about-vision"
+    [imageAlt]="langService.t.about.hero.title">
+  </app-internal-hero>
 
   <!-- ========================================================
        2. FOUNDATION — من نحن (Preserved Successful Section)
@@ -114,7 +61,7 @@
           <div class="foundation-trust-seal">
             <i class="fa-solid fa-shield-halved trust-seal-icon" aria-hidden="true"></i>
             <span class="trust-seal-text">
-              منهجية عمل مهنية معتمدة ترتكز على الشفافية والدقة في كافة مراحل التوريد والوساطة التجارية
+              {{ langService.currentLang === 'ar' ? 'منهجية عمل مهنية معتمدة ترتكز على الشفافية والدقة في كافة مراحل التوريد والوساطة التجارية' : 'Certified professional methodology built on transparency and precision across all supply and brokerage phases' }}
             </span>
           </div>
 
@@ -131,7 +78,7 @@
 
             <div class="image-viewport">
               <img src="/about-foundation.jpg"
-                   alt="مؤسسة مساند آسر للإمداد والوساطة التجارية"
+                   [alt]="langService.t.meta.companyFullName"
                    class="executive-image" />
               <div class="image-gradient-veil" aria-hidden="true"></div>
             </div>
@@ -143,7 +90,7 @@
               </div>
               <div class="badge-text-wrap">
                 <span class="badge-title">{{ langService.t.meta.companyName }}</span>
-                <span class="badge-subtitle">الرياض · المملكة العربية السعودية</span>
+                <span class="badge-subtitle">{{ langService.currentLang === 'ar' ? 'الرياض · المملكة العربية السعودية' : 'Riyadh · Kingdom of Saudi Arabia' }}</span>
               </div>
             </div>
 
@@ -159,7 +106,7 @@
        3. VISION (Brand Manifesto — Upgraded Architectural Background)
        Deep Teal #063A3A base with extremely subtle architectural linework
        ======================================================== -->
-  <section class="vision-manifesto-section" aria-labelledby="vision-heading">
+  <section id="about-vision" class="vision-manifesto-section" aria-labelledby="vision-heading">
     
     <!-- Sophisticated Subtle Architectural Linework & Tonal Shapes (No Glow, No Gradients) -->
     <div class="vision-architectural-backdrop" aria-hidden="true">
@@ -251,8 +198,8 @@
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
               </div>
               <div class="indicator-content">
-                <h3 class="indicator-title">استقطاب الموردين المعتمدين</h3>
-                <p class="indicator-desc">بحث دقيق وتدقيق للمواصفات الفنية المعتمدة</p>
+                <h3 class="indicator-title">{{ langService.currentLang === 'ar' ? 'استقطاب الموردين المعتمدين' : 'Sourcing Qualified Suppliers' }}</h3>
+                <p class="indicator-desc">{{ langService.currentLang === 'ar' ? 'بحث دقيق وتدقيق للمواصفات الفنية المعتمدة' : 'Meticulous sourcing and verification of technical specifications' }}</p>
               </div>
             </div>
 
@@ -261,8 +208,8 @@
                 <i class="fa-solid fa-scale-balanced"></i>
               </div>
               <div class="indicator-content">
-                <h3 class="indicator-title">تحليل ومقارنة عروض الأسعار</h3>
-                <p class="indicator-desc">مقارنات موضوعية متكاملة تحقق التوازن بين التكلفة والجودة</p>
+                <h3 class="indicator-title">{{ langService.currentLang === 'ar' ? 'تحليل ومقارنة عروض الأسعار' : 'Quotation Analysis & Comparison' }}</h3>
+                <p class="indicator-desc">{{ langService.currentLang === 'ar' ? 'مقارنات موضوعية متكاملة تحقق التوازن بين التكلفة والجودة' : 'Objective comparisons balancing cost, timeline, and quality' }}</p>
               </div>
             </div>
 
@@ -271,8 +218,8 @@
                 <i class="fa-solid fa-truck-fast"></i>
               </div>
               <div class="indicator-content">
-                <h3 class="indicator-title">التنسيق والمتابعة المسؤولة</h3>
-                <p class="indicator-desc">إشراف وتنسيق مستمر يضمن سلاسة التنفيذ وموثوقية التسليم</p>
+                <h3 class="indicator-title">{{ langService.currentLang === 'ar' ? 'التنسيق والمتابعة المسؤولة' : 'Diligent Coordination & Follow-up' }}</h3>
+                <p class="indicator-desc">{{ langService.currentLang === 'ar' ? 'إشراف وتنسيق مستمر يضمن سلاسة التنفيذ وموثوقية التسليم' : 'Continuous follow-up ensuring seamless execution and delivery' }}</p>
               </div>
             </div>
 
@@ -291,7 +238,7 @@
 
             <div class="image-viewport">
               <img src="/about-mission.jpg"
-                   alt="جلسات التخطيط الاستراتيجي للإمداد والوساطة التجارية"
+                   [alt]="langService.currentLang === 'ar' ? 'جلسات التخطيط الاستراتيجي للإمداد والوساطة التجارية' : 'Strategic Supply Planning Sessions'"
                    class="executive-image" />
               <div class="image-gradient-veil" aria-hidden="true"></div>
             </div>
@@ -302,8 +249,8 @@
                 <i class="fa-solid fa-handshake"></i>
               </div>
               <div class="badge-text-wrap">
-                <span class="badge-title">مساندة الأعمال والمشروعات</span>
-                <span class="badge-subtitle">حلول توريد منظمة ومرنة</span>
+                <span class="badge-title">{{ langService.currentLang === 'ar' ? 'مساندة الأعمال والمشروعات' : 'Supporting Enterprises & Projects' }}</span>
+                <span class="badge-subtitle">{{ langService.currentLang === 'ar' ? 'حلول توريد منظمة ومرنة' : 'Structured & Agile Procurement Solutions' }}</span>
               </div>
             </div>
 
@@ -519,68 +466,14 @@
   </section>
 
   <!-- ========================================================
-       8. FINAL CTA (Harmonious Executive Grand Finale)
-       Background: /cta.png with Dark Near-Black Overlay rgba(0, 0, 0, 0.74)
+       8. FINAL CTA (Unified Internal CTA System)
        ======================================================== -->
-  <section class="cta-grand-finale" aria-labelledby="cta-master-title">
-    
-    <!-- Background Image Layer -->
-    <div class="cta-bg-image-layer" aria-hidden="true"></div>
-
-    <!-- Dark Near-Black Overlay -->
-    <div class="cta-black-overlay" aria-hidden="true"></div>
-
-    <!-- Very Thin Gold Rule Accents -->
-    <div class="cta-top-gold-rule" aria-hidden="true"></div>
-    <div class="cta-bottom-gold-rule" aria-hidden="true"></div>
-
-    <div class="editorial-container cta-centered-wrapper">
-      <div class="cta-harmonious-content">
-        
-        <div class="cta-eyebrow-tag">
-          <span class="cta-tag-gold-line" aria-hidden="true"></span>
-          <span class="cta-tag-text">{{ langService.t.about.cta.label }}</span>
-          <span class="cta-tag-gold-line" aria-hidden="true"></span>
-        </div>
-
-        <h2 id="cta-master-title" class="cta-display-heading">
-          {{ langService.t.about.cta.title }}
-        </h2>
-
-        <p class="cta-supporting-text">
-          {{ langService.t.about.cta.description }}
-        </p>
-
-        <div class="cta-button-row">
-          <a routerLink="/request-quote" class="editorial-btn-gold cta-action-btn">
-            <span>{{ langService.t.about.cta.buttonText }}</span>
-            <i class="fa-solid cta-icon-arrow"
-               [class.fa-arrow-left]="langService.currentLang === 'ar'"
-               [class.fa-arrow-right]="langService.currentLang !== 'ar'"
-               aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <!-- Micro Trust Signals Underneath Button -->
-        <div class="cta-trust-pills-row" aria-hidden="true">
-          <span class="cta-trust-pill">
-            <i class="fa-solid fa-check"></i>
-            <span>حلول توريد مخصصة</span>
-          </span>
-          <span class="cta-trust-divider">•</span>
-          <span class="cta-trust-pill">
-            <i class="fa-solid fa-check"></i>
-            <span>مقارنات دقيقة وموثوقة</span>
-          </span>
-          <span class="cta-trust-divider">•</span>
-          <span class="cta-trust-pill">
-            <i class="fa-solid fa-check"></i>
-            <span>متابعة مستمرة حتى التسليم</span>
-          </span>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <app-internal-cta
+    [label]="langService.t.about.cta.label"
+    [title]="langService.t.about.cta.title"
+    [description]="langService.t.about.cta.description"
+    [buttonText]="langService.t.about.cta.buttonText"
+    buttonLink="/request-quote">
+  </app-internal-cta>
 
 </div>
