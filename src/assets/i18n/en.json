@@ -4,7 +4,7 @@
     "siteDescription": "Musanid Aser Establishment for Business Supply and Commercial Brokerage services in Saudi Arabia. We assist enterprises in meeting procurement demands with clarity and precision.",
     "companyName": "Musanid Aser",
     "companyFullName": "Musanid Aser for Supply & Commercial Brokerage",
-    "cr": "Certified Saudi Commercial Registry · Riyadh",
+    "cr": "Saudi Commercial Registration – Riyadh",
     "location": "Riyadh — Kingdom of Saudi Arabia",
     "phone": "0557664765",
     "phoneSecondary": "0531660854",
@@ -55,7 +55,7 @@
   "services": {
     "label": "COMMERCIAL SUPPLY & BROKERAGE SERVICES",
     "title": "Enterprise Supply Solutions Engineered for Business Scale",
-    "description": "Providing practical solutions to secure operational requirements, audit quotations, and coordinate commercial supply with professionalism and reliability.",
+    "description": "Providing practical solutions to secure operational requirements, review and compare quotations, and coordinate commercial supply with professionalism and reliability.",
     "viewAll": "Explore All Services",
     "items": [
       {
@@ -80,7 +80,7 @@
         "id": 4,
         "num": "04",
         "title": "Quotation Collection & Comparison",
-        "desc": "Soliciting, auditing, and comparing financial and technical quotes to enable informed procurement decisions."
+        "desc": "Soliciting, reviewing, and comparing financial and technical quotes to enable informed procurement decisions."
       },
       {
         "id": 5,
@@ -161,7 +161,7 @@
       {
         "step": "04",
         "stage": "Stage 04 · Quotation Matrix",
-        "title": "Audited Quotation Comparison",
+        "title": "Structured Quotation Comparison",
         "desc": "Delivering comparison matrices highlighting technical and commercial value."
       },
       {
@@ -196,7 +196,7 @@
       },
       {
         "num": "03",
-        "title": "Audited Quotation Comparison",
+        "title": "Structured Quotation Comparison",
         "desc": "Structuring objective comparison sheets that outline cost and technical nuances for informed decisions."
       },
       {
@@ -248,7 +248,7 @@
       "numeral": "03",
       "label": "OUR STRATEGIC PURPOSE",
       "title": "Our Purpose",
-      "statement": "Maximizing operational and financial efficiency for our clients by lowering acquisition costs, saving procurement time, and securing delivery continuity."
+      "statement": "Maximizing operational and financial efficiency for our clients by lowering acquisition costs, saving procurement time, and supporting supply continuity."
     },
     "principles": {
       "label": "OUR GUIDING PRINCIPLES",
@@ -313,7 +313,7 @@
   "servicesPage": {
     "hero": {
       "eyebrow": "OUR SERVICES",
-      "eyebrowAr": "Official Services",
+      "eyebrowAr": "Services",
       "title": "Our Services",
       "description": "Commercial supply and brokerage solutions assisting enterprises and projects in accessing the optimal options for their needs.",
       "ctaExplore": "Explore Services",
@@ -333,7 +333,7 @@
       ]
     },
     "showcase": {
-      "eyebrow": "OFFICIAL SERVICE CAPABILITIES",
+      "eyebrow": "SERVICE CAPABILITIES",
       "title": "Structured Service Index",
       "actionQuote": "Request Quote for this Service",
       "services": [
@@ -355,7 +355,7 @@
           "num": "03",
           "title": "Supplier Sourcing",
           "subtitle": "Supplier Sourcing",
-          "desc": "Identifying qualified suppliers and certified manufacturing facilities aligned with specific technical project requirements.",
+          "desc": "Identifying qualified suppliers and specialized manufacturing facilities aligned with specific technical project requirements.",
           "image": "/services/supplier-sourcing.jpg"
         },
         {
@@ -369,7 +369,7 @@
           "num": "05",
           "title": "Supply Coordination & Follow-up",
           "subtitle": "Supply Coordination & Follow-up",
-          "desc": "Overseeing operational progress, verifying timelines, and coordinating fulfillment through to final delivery and specification audit.",
+          "desc": "Overseeing operational progress, verifying timelines, and coordinating fulfillment through to final delivery and specification review.",
           "image": "/services/supply-coordination.jpg"
         },
         {
@@ -635,9 +635,9 @@
     "companyName": "Musanid Aser for Supply & Commercial Brokerage",
     "brandDesc": "Supply & Commercial Brokerage",
     "mission": "Dedicated corporate procurement and commercial brokerage partner for enterprises across Saudi Arabia, ensuring rigorous quality and cost optimization.",
-    "crBadge": "Certified Saudi Commercial Registry · Riyadh",
+    "crBadge": "Saudi Commercial Registration – Riyadh",
     "navHeading": "Navigation",
-    "servicesHeading": "Official Services",
+    "servicesHeading": "Services",
     "contactHeading": "Direct Channels",
     "primaryPhoneLabel": "Primary Contact (Call / WhatsApp):",
     "secondaryPhoneLabel": "Secondary Contact (Call / WhatsApp):",

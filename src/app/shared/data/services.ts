@@ -32,7 +32,7 @@ export const services = [
     titleAr: 'جمع ومقارنة عروض الأسعار',
     titleEn: 'Quotation Collection & Comparison',
     descriptionAr: 'استدراج عروض الأسعار وتحليلها فنياً ومالياً لاختيار العرض الأمثل والأكثر جدوى للمنشأة.',
-    descriptionEn: 'Soliciting, auditing, and comparing financial and technical quotes to secure optimal commercial value.',
+    descriptionEn: 'Soliciting, reviewing, and comparing financial and technical quotes to secure optimal commercial value.',
     image: '/services/quotation-comparison.jpg'
   },
   {
@@ -40,7 +40,7 @@ export const services = [
     num: '05',
     titleAr: 'تنسيق ومتابعة التوريد',
     titleEn: 'Supply Coordination & Follow-up',
-    descriptionAr: 'متابعة مراحل التنفيذ والجداول الزمنية للتوريد وضمان استلام المواد وفق المواصفات المحددة.',
+    descriptionAr: 'متابعة مراحل التنفيذ والجداول الزمنية للتوريد ومساندة استلام المواد وفق المواصفات المحددة.',
     descriptionEn: 'End-to-end milestone coordination and tracking to ensure timely, compliant order fulfillment.',
     image: '/services/supply-coordination.jpg'
   },
