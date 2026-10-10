@@ -35,6 +35,15 @@ export const routes: Routes = [
     redirectTo: 'request-quote'
   },
   {
+    path: 'privacy',
+    loadComponent: () => import('./pages/privacy/privacy.component').then(m => m.PrivacyComponent),
+    title: 'سياسة الخصوصية وحماية البيانات | Privacy Policy - Musanid Aser'
+  },
+  {
+    path: 'privacy-policy',
+    redirectTo: 'privacy'
+  },
+  {
     path: '**',
     redirectTo: ''
   }

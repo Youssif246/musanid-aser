@@ -236,13 +236,46 @@
 .footer-bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
   padding-top: 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.84rem;
   color: rgba(255, 255, 255, 0.78);
   font-weight: 500;
-  text-align: center;
+}
+
+.footer-legal-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-legal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-size: 0.84rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.footer-legal-icon {
+  color: var(--gold-primary);
+  font-size: 0.82rem;
+}
+
+.footer-legal-link:hover {
+  color: var(--gold-light);
+  border-color: rgba(212, 175, 55, 0.35);
+  background: rgba(212, 175, 55, 0.08);
+  transform: translateY(-1px);
 }
 
 /* Responsive */

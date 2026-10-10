@@ -55,6 +55,12 @@
               <span>{{ langService.t.nav.quote }}</span>
             </a>
           </li>
+          <li>
+            <a routerLink="/privacy">
+              <i class="fa-solid fa-chevron-left footer-nav-chevron"></i>
+              <span>{{ langService.t.footer.privacyPolicy }}</span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -141,6 +147,12 @@
       <p class="copyright-text">
         &copy; {{ currentYear }} {{ langService.t.meta.companyFullName }}. {{ langService.t.footer.rights }}
       </p>
+      <div class="footer-legal-links">
+        <a routerLink="/privacy" class="footer-legal-link">
+          <i class="fa-solid fa-shield-halved footer-legal-icon"></i>
+          <span>{{ langService.t.footer.privacyPolicy }}</span>
+        </a>
+      </div>
     </div>
 
   </div>

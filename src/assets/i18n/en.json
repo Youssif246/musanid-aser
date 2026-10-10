@@ -22,6 +22,7 @@
     "sectors": "Sectors",
     "quote": "Request a Quote",
     "contact": "Contact Us",
+    "privacy": "Privacy Policy",
     "whatsapp": "Chat on WhatsApp",
     "switchLang": "العربية"
   },
@@ -645,6 +646,88 @@
     "phoneLabel": "Phone Inquiry:",
     "emailLabel": "Official Email:",
     "locationLabel": "Headquarters:",
+    "privacyPolicy": "Privacy Policy",
     "rights": "All rights reserved."
+  },
+  "privacy": {
+    "hero": {
+      "eyebrow": "PRIVACY & POLICY",
+      "title": "Privacy Policy & Data Protection",
+      "description": "At Musanid Aser for Supply & Commercial Brokerage, we are committed to safeguarding the privacy of our visitors and clients, managing submitted data with strict confidentiality and care.",
+      "ctaContact": "Explore Policy Terms"
+    },
+    "meta": {
+      "badge": "Official Policy Document",
+      "entity": "Musanid Aser for Supply and Commercial Brokerage",
+      "updated": "Updated October 2026",
+      "status": "Active & Approved"
+    },
+    "lead": {
+      "title": "Our Commitment to Privacy & Confidentiality",
+      "text": "At Musanid Aser for Supply & Commercial Brokerage, we are dedicated to protecting the privacy of our website visitors and clients, and handling all information provided through the website with strict confidentiality and diligence."
+    },
+    "sections": {
+      "collection": {
+        "num": "01",
+        "tag": "Data Collection",
+        "title": "Information Collected Through Inquiries & Forms",
+        "text": "When using our quote request form or contacting us, certain information may be collected including entity name, contact representative name, mobile number, email address, request details, specifications, quantities, estimated budget, and delivery details.",
+        "fields": [
+          "Organization Name",
+          "Contact Representative Name",
+          "Mobile Phone Number",
+          "Official Email Address",
+          "Request Details",
+          "Technical Specifications",
+          "Required Quantities",
+          "Estimated Budget",
+          "Delivery Details"
+        ]
+      },
+      "purpose": {
+        "num": "02",
+        "tag": "Purpose of Use",
+        "title": "Purpose of Utilizing Collected Data",
+        "text": "This data is utilized solely for reviewing requests, preparing appropriate quotations, communicating with clients, and following up on supply and commercial brokerage services.",
+        "points": [
+          "Reviewing requests and evaluating requirements with technical and commercial accuracy.",
+          "Preparing competitive quotations and comparing qualified sourcing options.",
+          "Direct communication with the client for clarifications and updates.",
+          "Monitoring and coordinating service delivery phases related to supply and commercial brokerage."
+        ]
+      },
+      "sharing": {
+        "num": "03",
+        "tag": "Confidentiality",
+        "title": "Non-Sale of Data & Commercial Confidentiality",
+        "text": "We do not sell or share client data with any third party for marketing purposes. Essential information may only be shared with verified suppliers or relevant parties when strictly necessary to assess requests or execute services, and only to the extent required."
+      },
+      "security": {
+        "num": "04",
+        "tag": "Security & Protection",
+        "title": "Data Security & Protective Safeguards",
+        "text": "We are committed to taking appropriate measures to protect information against unauthorized access, disclosure, or unlawful use."
+      },
+      "external": {
+        "num": "05",
+        "tag": "External Links",
+        "title": "External Links & Third-Party Platforms",
+        "text": "Our website may include links to external channels such as WhatsApp or email services, which operate under their respective privacy policies."
+      },
+      "consent": {
+        "num": "06",
+        "tag": "Official Consent",
+        "title": "Consent to Privacy Terms",
+        "text": "By using this website and submitting your data through our contact and inquiry forms, you agree to the use of your data for the purposes described in this policy."
+      }
+    },
+    "cta": {
+      "eyebrow": "Privacy & Data Inquiries",
+      "heading": "Have Any Questions Regarding Our Privacy Policy or Your Data?",
+      "subheading": "The Musanid Aser team is ready to answer all your inquiries with complete clarity and confidentiality. Reach out via our direct channels or visit our contact page:",
+      "button": "Go to Contact Page",
+      "whatsappButton": "Chat on WhatsApp",
+      "orDivider": "Or Through Direct Channels"
+    }
   }
 }
