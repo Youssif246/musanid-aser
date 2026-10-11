@@ -121,8 +121,84 @@
           </div>
         </article>
 
-        <!-- Clause 03: Sharing & Non-Sale -->
-        <article class="clause-card clause-highlight" id="clause-sharing">
+        <!-- Clause 03: Legal Basis -->
+        <article class="clause-card" id="clause-legal-basis">
+          <div class="clause-card-header">
+            <div class="clause-num-badge">{{ langService.t.privacy.sections.legalBasis.num }}</div>
+            <div class="clause-meta">
+              <span class="clause-tag">{{ langService.t.privacy.sections.legalBasis.tag }}</span>
+              <h3 class="clause-title">{{ langService.t.privacy.sections.legalBasis.title }}</h3>
+            </div>
+          </div>
+
+          <div class="strict-badge-notice">
+            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+            <span>{{ langService.currentLang === 'ar' ? 'الأنظمة واللوائح المعمول بها في المملكة' : 'Applicable Laws & Regulations in KSA' }}</span>
+          </div>
+
+          <p class="clause-text leading-emphasis">
+            {{ langService.t.privacy.sections.legalBasis.text }}
+          </p>
+        </article>
+
+        <!-- Clause 04: Data Retention Period -->
+        <article class="clause-card" id="clause-retention">
+          <div class="clause-card-header">
+            <div class="clause-num-badge">{{ langService.t.privacy.sections.retention.num }}</div>
+            <div class="clause-meta">
+              <span class="clause-tag">{{ langService.t.privacy.sections.retention.tag }}</span>
+              <h3 class="clause-title">{{ langService.t.privacy.sections.retention.title }}</h3>
+            </div>
+          </div>
+
+          <p class="clause-text">
+            {{ langService.t.privacy.sections.retention.text }}
+          </p>
+
+          <div class="security-pillars-row">
+            <div class="sec-pillar">
+              <i class="fa-solid fa-hourglass-half sec-ico" aria-hidden="true"></i>
+              <span>{{ langService.currentLang === 'ar' ? 'مدة مرتبطة بالغرض' : 'Purpose-Bound Retention' }}</span>
+            </div>
+            <div class="sec-pillar">
+              <i class="fa-solid fa-book-bookmark sec-ico" aria-hidden="true"></i>
+              <span>{{ langService.currentLang === 'ar' ? 'متطلبات نظامية' : 'Statutory Terms' }}</span>
+            </div>
+            <div class="sec-pillar">
+              <i class="fa-solid fa-trash-can-arrow-up sec-ico" aria-hidden="true"></i>
+              <span>{{ langService.currentLang === 'ar' ? 'إتلاف وتخلص آمن' : 'Secure Safe Disposal' }}</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Clause 05: Data Subject Rights -->
+        <article class="clause-card clause-highlight" id="clause-rights">
+          <div class="clause-card-header">
+            <div class="clause-num-badge">{{ langService.t.privacy.sections.rights.num }}</div>
+            <div class="clause-meta">
+              <span class="clause-tag">{{ langService.t.privacy.sections.rights.tag }}</span>
+              <h3 class="clause-title">{{ langService.t.privacy.sections.rights.title }}</h3>
+            </div>
+          </div>
+
+          <p class="clause-text leading-emphasis">
+            {{ langService.t.privacy.sections.rights.text }}
+          </p>
+
+          <div class="purpose-bullets-wrap">
+            <ul class="purpose-checklist">
+              @for (item of langService.t.privacy.sections.rights.items; track item) {
+              <li>
+                <i class="fa-solid fa-square-check bullet-icon" aria-hidden="true"></i>
+                <span>{{ item }}</span>
+              </li>
+              }
+            </ul>
+          </div>
+        </article>
+
+        <!-- Clause 06: Sharing & Non-Sale -->
+        <article class="clause-card" id="clause-sharing">
           <div class="clause-card-header">
             <div class="clause-num-badge">{{ langService.t.privacy.sections.sharing.num }}</div>
             <div class="clause-meta">
@@ -141,7 +217,7 @@
           </p>
         </article>
 
-        <!-- Clause 04: Security Measures -->
+        <!-- Clause 07: Security Measures -->
         <article class="clause-card" id="clause-security">
           <div class="clause-card-header">
             <div class="clause-num-badge">{{ langService.t.privacy.sections.security.num }}</div>
@@ -171,7 +247,7 @@
           </div>
         </article>
 
-        <!-- Clause 05: External Links & Services -->
+        <!-- Clause 08: External Links & Services -->
         <article class="clause-card" id="clause-external">
           <div class="clause-card-header">
             <div class="clause-num-badge">{{ langService.t.privacy.sections.external.num }}</div>
@@ -197,7 +273,7 @@
           </div>
         </article>
 
-        <!-- Clause 06: Consent & Approval -->
+        <!-- Clause 09: Consent & Approval -->
         <article class="clause-card" id="clause-consent">
           <div class="clause-card-header">
             <div class="clause-num-badge">{{ langService.t.privacy.sections.consent.num }}</div>
@@ -264,7 +340,7 @@
             <i class="fa-solid" [class.fa-arrow-left]="langService.currentLang === 'ar'" [class.fa-arrow-right]="langService.currentLang === 'en'"></i>
           </a>
 
-          <a href="https://wa.me/966557664765?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9"
+          <a href="https://wa.me/966533796523?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9"
              target="_blank"
              rel="noopener noreferrer"
              class="cta-wa-btn">

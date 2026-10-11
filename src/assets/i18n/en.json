@@ -6,11 +6,11 @@
     "companyFullName": "Musanid Aser for Supply & Commercial Brokerage",
     "cr": "Saudi Commercial Registration – Riyadh",
     "location": "Riyadh — Kingdom of Saudi Arabia",
-    "phone": "0557664765",
+    "phone": "0533796523",
     "phoneSecondary": "0531660854",
-    "phoneDisplay": "+966 55 766 4765",
+    "phoneDisplay": "+966 53 379 6523",
     "phoneSecondaryDisplay": "+966 53 166 0854",
-    "whatsapp": "0557664765",
+    "whatsapp": "0533796523",
     "whatsappSecondary": "0531660854",
     "email": "info@musanidaser.com",
     "domain": "musanidaser.com"
@@ -551,7 +551,7 @@
       "eyebrow": "CONTACT DETAILS",
       "title": "Direct Contact Channels",
       "description": "We welcome your direct inquiries regarding procurement and commercial brokerage, or you can submit specifications via the quotation form.",
-      "phonePrimary": "055 766 4765",
+      "phonePrimary": "053 379 6523",
       "phoneSecondary": "053 166 0854",
       "email": "info@musanidaser.com",
       "location": "Riyadh, Kingdom of Saudi Arabia",
@@ -610,7 +610,7 @@
       "validation": {
         "organizationNameRequired": "Please enter the organization name",
         "contactPersonRequired": "Please enter the contact person's name",
-        "mobileRequired": "Please enter a valid mobile number (e.g. 0557664765)",
+        "mobileRequired": "Please enter a valid mobile number (e.g. 0533796523)",
         "emailRequired": "Please enter your email address",
         "emailInvalid": "Please enter a valid email format",
         "requestTypeRequired": "Please select a request type",
@@ -696,26 +696,50 @@
           "Monitoring and coordinating service delivery phases related to supply and commercial brokerage."
         ]
       },
-      "sharing": {
+      "legalBasis": {
         "num": "03",
+        "tag": "Legal Basis",
+        "title": "Legal Basis for Data Processing",
+        "text": "Data processing is conducted based on the data subject's consent when submitted through the website, and for purposes related to reviewing requests, communication, and delivering requested services, in accordance with applicable laws and regulations in the Kingdom of Saudi Arabia."
+      },
+      "retention": {
+        "num": "04",
+        "tag": "Data Retention",
+        "title": "Data Retention Period",
+        "text": "We retain personal data for the duration necessary to fulfill the purpose for which it was collected or as required by relevant regulations, after which it is disposed of securely to prevent unauthorized access or unlawful recovery."
+      },
+      "rights": {
+        "num": "05",
+        "tag": "Data Subject Rights",
+        "title": "Rights of the Data Subject",
+        "text": "In accordance with applicable regulations, the data subject has the right to request access to their personal data, obtain it in a clear format, request its correction or update, request its destruction when statutory conditions apply, and withdraw consent to its processing where applicable.",
+        "items": [
+          "Request access to personal data and obtain it in a clear, readable format.",
+          "Request correction, updating, and verification of personal data.",
+          "Request destruction of personal data when statutory conditions apply.",
+          "Withdraw consent to data processing where applicable in accordance with regulations."
+        ]
+      },
+      "sharing": {
+        "num": "06",
         "tag": "Confidentiality",
         "title": "Non-Sale of Data & Commercial Confidentiality",
         "text": "We do not sell or share client data with any third party for marketing purposes. Essential information may only be shared with verified suppliers or relevant parties when strictly necessary to assess requests or execute services, and only to the extent required."
       },
       "security": {
-        "num": "04",
+        "num": "07",
         "tag": "Security & Protection",
         "title": "Data Security & Protective Safeguards",
         "text": "We are committed to taking appropriate measures to protect information against unauthorized access, disclosure, or unlawful use."
       },
       "external": {
-        "num": "05",
+        "num": "08",
         "tag": "External Links",
         "title": "External Links & Third-Party Platforms",
         "text": "Our website may include links to external channels such as WhatsApp or email services, which operate under their respective privacy policies."
       },
       "consent": {
-        "num": "06",
+        "num": "09",
         "tag": "Official Consent",
         "title": "Consent to Privacy Terms",
         "text": "By using this website and submitting your data through our contact and inquiry forms, you agree to the use of your data for the purposes described in this policy."

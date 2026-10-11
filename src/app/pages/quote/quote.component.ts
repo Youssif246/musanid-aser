@@ -180,6 +180,6 @@ export class QuoteComponent {
         `• *Delivery City:* ${v.deliveryCity || '-'}\n` +
         `• *Additional Details:* ${v.additionalDetails || 'None'}`;
 
-    return `https://wa.me/966557664765?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/966533796523?text=${encodeURIComponent(text)}`;
   }
 }
